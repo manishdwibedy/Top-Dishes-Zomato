@@ -1,4 +1,5 @@
 import requests
+import json
 from util import constant
 
 def get_reviews(restaurant_id):
@@ -20,7 +21,16 @@ def get_reviews(restaurant_id):
 
     print 'Starting'
     response = requests.get(URL, headers=headers, params=payload)
-    print response.text
+
+    reviewsObject = json.loads(response.text)
+
+    reviewList = reviewsObject['user_reviews']
+
+    for review in reviewList:
+        print review['review']['rating']
+        print review['review']['review_text']
+
+    # print response.text
 
 if __name__ == "__main__":
     restaurant_id = constant.restaurant_id
