@@ -17,4 +17,5 @@ cuisine_id = 148
 # Restaurants Category - Fine Dining
 establishment_id = 18
 
-
+# Restaurant ID for Impromptu
+restaurant_id = 311104
