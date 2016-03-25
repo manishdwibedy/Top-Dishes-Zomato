@@ -14,5 +14,7 @@ collection_id = 3
 # Cuisine - Indian
 cuisine_id = 148
 
+# Restaurants Category - Fine Dining
+establishment_id = 18
 
 
