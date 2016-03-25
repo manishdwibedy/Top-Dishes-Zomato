@@ -1,10 +1,10 @@
 import requests
 from util import constant
 
-def get_reviews(restraunt_id):
+def get_reviews(restaurant_id):
     '''
-    Getting the reviews
-    :param restraunt_id: restraunt id
+    Getting the reviews of a restaurant
+    :param restaurant_id: restaurant id
     :return: Nothing
     '''
     URL = constant.zomato_base_url + 'reviews'
@@ -17,6 +17,7 @@ def get_reviews(restraunt_id):
 
     payload = {'res_id': restaurant_id}
 
+    print 'Starting'
     response = requests.get(URL, headers=headers, params=payload)
     print response.text
 
