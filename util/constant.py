@@ -1,6 +1,9 @@
 
 zomato_api_key = "69f681c8aa0f5b63aaab594e0304495e"
 
+# Zomato Base URL
+zomato_base_url = "https://developers.zomato.com/api/v2.1/"
+
 # Category - Dine-Out
 category = 2
 
