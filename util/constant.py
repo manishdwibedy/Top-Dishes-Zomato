@@ -7,3 +7,7 @@ category = 2
 # Location for New Delhi, India
 city_id = 1
 country_code = 1
+
+# Collection - Romantic
+collection_id = 3
+
