@@ -12,7 +12,8 @@ def get_reviews(restaurant_id):
 
     headers = {
         'Accept': 'application/json',
-        'user-key': constant.zomato_api_key
+        'user-key': constant.zomato_api_key,
+        "User-agent": "curl/7.43.0"
     }
 
     payload = {'res_id': restaurant_id}
