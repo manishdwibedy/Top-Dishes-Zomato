@@ -11,3 +11,8 @@ country_code = 1
 # Collection - Romantic
 collection_id = 3
 
+# Cuisine - Indian
+cuisine_id = 148
+
+
+
