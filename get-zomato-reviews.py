@@ -26,12 +26,16 @@ def get_reviews(restaurant_id):
 
     reviewList = reviewsObject['user_reviews']
 
+    user_reviews = []
     for review in reviewList:
-        print review['review']['rating']
-        print review['review']['review_text']
+        user_review = {
+            'rating' : review['review']['rating'],
+            'review_text' : review['review']['review_text']
+        }
+        user_reviews.append(user_review)
 
-    # print response.text
+    return user_reviews
 
 if __name__ == "__main__":
     restaurant_id = constant.restaurant_id
-    get_reviews(restaurant_id)
+    print get_reviews(restaurant_id)
