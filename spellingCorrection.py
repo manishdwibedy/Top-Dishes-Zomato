@@ -1,9 +1,14 @@
 from textblob import TextBlob
 
 def correctSpelling(text):
-    wiki = TextBlob(text)
+    '''
+    Correcting the spelling of the words
+    :param text: the input text
+    :return: corrected the spelling in the words
+    '''
+    textBlob = TextBlob(text)
 
-    return wiki.correct()
+    return textBlob.correct()
 
 if __name__ == "__main__":
     print correctSpelling("refilling")
