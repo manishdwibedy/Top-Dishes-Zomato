@@ -2,7 +2,7 @@ import requests
 import json
 from util import constant
 
-def get_reviews(restaurant_id):
+def get_reviews(restaurant_id, start = 0, count = 5):
     '''
     Getting the reviews of a restaurant
     :param restaurant_id: restaurant id
@@ -20,7 +20,11 @@ def get_reviews(restaurant_id):
     }
 
     # parameters needed by the API to get reviews
-    payload = {'res_id': restaurant_id}
+    payload = {
+        'res_id': restaurant_id,
+        'start': start,
+        'count': count
+        }
 
     # Hitting the API with needed headers and parameters
     response = requests.get(URL, headers=headers, params=payload)
@@ -42,7 +46,7 @@ def get_reviews(restaurant_id):
         # An individual user review
         user_review = {
             'rating' : review['review']['rating'],
-            'review_text' : ascii_review
+            'review_text': ascii_review
         }
 
         # Adding to the final list of user reviews
@@ -55,5 +59,16 @@ if __name__ == "__main__":
     # The restaurant id for Impromptu
     restaurant_id = constant.restaurant_id
 
-    # All the reviews for Impromptu
-    user_reviews = get_reviews(restaurant_id)
+    # Get 5 reviews for Impromptu
+    # user_reviews = get_reviews(restaurant_id)
+
+    num_of_reviews = 10
+
+    # Get 'num_of_reviews' reviews for Impromptu
+    user_reviews = get_reviews(restaurant_id, num_of_reviews)
+    print user_reviews
+
+    start = 5
+    user_reviews = get_reviews(restaurant_id, start, num_of_reviews)
+    print user_reviews
+
