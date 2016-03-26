@@ -25,7 +25,29 @@ def getToken():
 
     return response['access_token']
 
+def translate(token, text, destinationLanguage):
+    '''
+    Translate the given text
+    :param token: the access token
+    :param text: the text to be translated
+    :param destinationLanguage: the destination language
+    :return: text in the destination Language
+    '''
+
+    translation_args = {
+        'text': text,
+        'to': destinationLanguage,
+        'from': 'en'
+        }
+
+    headers={'Authorization': 'Bearer '+ token}
+    translation_url = 'http://api.microsofttranslator.com/V2/Ajax.svc/Translate?'
+    translation_result = requests.get(translation_url+urllib.urlencode(translation_args),headers=headers)
+
+    print translation_result.text
 
 if __name__ == "__main__":
     token = getToken()
+
+    translate(token, "Hello World", 'hi')
 
