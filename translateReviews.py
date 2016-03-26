@@ -44,7 +44,7 @@ def translate(token, text, destinationLanguage):
     translation_url = 'http://api.microsofttranslator.com/V2/Ajax.svc/Translate?'
     translation_result = requests.get(translation_url+urllib.urlencode(translation_args),headers=headers)
 
-    print translation_result.text
+    return translation_result.text
 
 if __name__ == "__main__":
     token = getToken()
