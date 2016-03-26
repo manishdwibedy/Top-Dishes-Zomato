@@ -1,6 +1,7 @@
 from util import constant
 from getZomatoReviews import get_reviews
 from translateReviews import translate, getToken
+from spellingCorrection import correctSpelling
 
 restaurant_id = constant.restaurant_id
 
@@ -13,6 +14,10 @@ for review in user_reviews:
     print 'English version -'
     print review
 
-    print 'Hindi version'
-    print translate(token=token, text=review,destinationLanguage='hi')
+    print 'Corrected spelling - '
+    correctedSpelling = correctSpelling(review['review_text'])
+    print correctSpelling
+
+    print 'Hindi version -'
+    print translate(token=token, text=correctedSpelling,destinationLanguage='hi')
 
