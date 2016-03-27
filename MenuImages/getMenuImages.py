@@ -11,25 +11,31 @@ def getMenuImage(URL):
             print img.attrs['src']
             break
 
-def getMenuImages(URL):
-    browser = webdriver.Firefox()
+def getMenuImages(URL, browser):
     browser.get(URL)
 
     list_links = browser.find_elements_by_tag_name('img')
 
     for link in list_links:
-        print link.get_attribute('src')
+        if "Menu" in link.get_attribute('alt'):
+            image_src = link.get_attribute('src')
+            if 'menu' in image_src:
+                return image_src
 
-    browser.close()
-
-
-    # pass
 if __name__ == "__main__":
     URL = "https://www.zomato.com/ncr/impromptu-golf-course-road-gurgaon/menu#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1"
 
-    # getMenuImage(URL)
-    getMenuImages(URL)
+    # Get the menu image
+    getMenuImage(URL)
 
+    # Starting the browser
+    browser = webdriver.Firefox()
+
+    # Getting the menu image
+    getMenuImages(URL. browser)
+
+    # Close the browser
+    browser.close()
 
 
 
