@@ -65,7 +65,7 @@ if __name__ == "__main__":
     num_of_reviews = 10
 
     # Get 'num_of_reviews' reviews for Impromptu
-    user_reviews = get_reviews(restaurant_id, num_of_reviews)
+    user_reviews = get_reviews(restaurant_id, count=num_of_reviews)
     print user_reviews
 
     start = 5
