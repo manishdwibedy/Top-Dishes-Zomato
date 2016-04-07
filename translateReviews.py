@@ -49,5 +49,5 @@ def translate(token, text, destinationLanguage):
 if __name__ == "__main__":
     token = getToken()
 
-    translate(token, "Hello World", 'hi')
+    print translate(token, "Hello World", 'hi')
 
