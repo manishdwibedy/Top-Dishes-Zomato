@@ -10,6 +10,6 @@ if __name__ == '__main__':
     docs = [{"id":"1", "name":"a"},{"id":"2","name":"b"}]
 
     index(connection, docs)
-    op = query.queryAll(connection, '*:*')
+    op = query.get(connection, '*:*')
     print op
 
