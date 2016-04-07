@@ -1,7 +1,7 @@
-from util import constant
-from getZomatoReviews import get_reviews
-from translateReviews import translate, getToken
+from Zomato.getZomatoReviews import get_reviews
 from spellingCorrection import correctSpelling
+from translateReviews import translate, getToken
+from util import constant
 
 restaurant_id = constant.restaurant_id
 
