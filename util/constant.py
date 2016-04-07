@@ -33,3 +33,18 @@ client_id = "Top-Dishes-Zomato"
 client_secret = "9y9VYW8rKl7wov/qgBbKxNzgY7VXpmxUhPMEWv2VebQ="
 scope = "http://api.microsofttranslator.com"
 grant_type = "client_credentials"
+
+###########
+####OCR API
+###########
+
+# API Key
+OCR_API_KEY = '452c22857888957'
+
+# The API URL
+OCR_BASE_URL = 'https://api.ocr.space/parse/image'
+
+# Sample menu image url
+OCR_MENU_URL = 'https://b.zmtcdn.com/data/menus/318/16774318/64dbf28b1c7ea97d90baf142e598b289.jpg'
+
+
