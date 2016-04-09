@@ -1,4 +1,4 @@
-from Zomato.getZomatoReviews import get_reviews
+from Zomato.getReviews import get_reviews
 from spellingCorrection import correctSpelling
 from translateReviews import translate, getToken
 from util import constant
