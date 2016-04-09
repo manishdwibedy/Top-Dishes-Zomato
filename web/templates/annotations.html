@@ -3,22 +3,63 @@
     <head>
         <meta charset="utf-8">
         <title>Annotator</title>
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery-ui.css') }}">
         <script src="{{ url_for('static', filename='js/jquery-1.10.2.js') }}"></script>
         <script src="{{ url_for('static', filename='js/jquery-ui.js') }}"></script>
-        <link rel="stylesheet" href="/resources/demos/style.css">
         <script src="{{ url_for('static', filename='js/jquery.ui.touch-punch.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery-ui.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+
 
         <style>
-            #draggable { width: 100px; height: 100px; padding: 0.5em; float: left; margin: 10px 10px 10px 0; }
-            #droppable { width: 150px; height: 150px; padding: 0.5em; float: left; margin: 10px; }
+            #droppable { width: 150px; height: 150px; padding: 0.5em; margin: 10px; }
+            .draggable{
+                border-style: dotted solid;
+                border-width: 2px;
+            }
         </style>
         <script>
             $(function() {
-                $( "#draggable" ).draggable();
+
+                // Get the review words
+                $.ajax({
+                    type: 'GET',
+                    url: 'getReview',
+                    dataType: 'json',
+                    success: function (data) {
+                        reviewWords = data.results;
+
+                        // Get each word of the review
+                        $.each(reviewWords, function(index, word) {
+                            console.log(word);
+                            $('#reviewWords').append(createDraggableWord(index, word))
+                        });
+
+                        $( ".draggable" ).draggable();
+
+
+                    }
+                });
+
 
                 $( "#droppable" ).droppable({
                     drop: function( event, ui ) {
+
+                        item = ui.draggable[0].childNodes[0].childNodes[0].nodeValue;
+                        current_food_items = $('#food_items').html();
+
+                        // hide the word
+                        $('#' + ui.draggable[0].id).hide();
+
+                        if (current_food_items.trim().length > 0){
+                            current_food_items += ', ' + item;
+                            $('#food_items').html(current_food_items);
+                        }
+                        else{
+                            $('#food_items').html(item);
+                        }
                         $( this )
                             .addClass( "ui-state-highlight" )
                             .find( "p" )
@@ -32,17 +73,34 @@
                     }
                 });
             });
+
+            function createDraggableWord(index, word)
+            {
+                html = '<div id="word_' + index + '" class="draggable" class="ui-widget-content">';
+                html += '<p>' + word + '</p>';
+                html += '</div>';
+
+                return html;
+            }
         </script>
     </head>
 <body>
 
-<div id="draggable" class="ui-widget-content">
-  <p>Drag me to my target</p>
+
+<div class="row">
+    <div class="col-md-12" id="reviewWords"></div>
+</div>
+<div class="row">
+    <div class="col-md-4 col-md-offset-4">
+       <div id="droppable" class="ui-widget-header">
+           <h6>Item Collection</h6>
+           <div id="food_items">
+           </div>
+       </div>
+    </div>
+    <div class="col-md-4"></div>
 </div>
 
-<div id="droppable" class="ui-widget-header">
-  <p>Drop here</p>
-</div>
 
 
 </body>
