@@ -5,11 +5,10 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return 'Main Page'
+    return render_template('index.html')
 
-@app.route('/test')
+@app.route('/annotate')
 def annotator():
-    # return 'testing'
     return render_template('annotations.html')
 
 if __name__ == '__main__':
