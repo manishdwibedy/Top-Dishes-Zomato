@@ -14,6 +14,7 @@ def annotator():
 @app.route('/getReview')
 def getReviews():
     review = 'Coffee was decent, but not memorable enough to become a regular.'
+    review = review * 5
     words = re.sub("[^\w]", " ",  review).split()
 
     return jsonify(results=words)
