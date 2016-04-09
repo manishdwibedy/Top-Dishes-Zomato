@@ -3,11 +3,12 @@
     <head>
         <meta charset="utf-8">
         <title>Annotator</title>
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery-ui.css') }}"">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery-ui.css') }}">
         <script src="{{ url_for('static', filename='js/jquery-1.10.2.js') }}"></script>
         <script src="{{ url_for('static', filename='js/jquery-ui.js') }}"></script>
-
         <link rel="stylesheet" href="/resources/demos/style.css">
+        <script src="{{ url_for('static', filename='js/jquery.ui.touch-punch.js') }}"></script>
+
         <style>
             #draggable { width: 100px; height: 100px; padding: 0.5em; float: left; margin: 10px 10px 10px 0; }
             #droppable { width: 150px; height: 150px; padding: 0.5em; float: left; margin: 10px; }
