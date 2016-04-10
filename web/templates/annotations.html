@@ -102,6 +102,12 @@
                     menu_item_selected = $(this).text();
 
                });
+
+                // .btn is the class of the element you want to change color
+                $(".sentimentButton").click(function() {
+
+                    $(this).removeClass('btn-success').toggleClass('btn-primary');
+                });
             });
 
             function createDraggableWord(index, word)
