@@ -15,3 +15,11 @@
 .annotation_button{
     width: 50%;
 }
+
+#sentimentButtonGroup{
+    width: 100%;
+}
+
+.sentimentButton{
+    width: 33%;
+}
