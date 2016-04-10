@@ -86,6 +86,13 @@
                             .html( "Out!" );
                     }
                 });
+
+                $(".dropdown-menu li a").click(function(){
+
+                  $("#currentMenu").text($(this).text());
+                  $("#currentMenu").val($(this).text());
+
+               });
             });
 
             function createDraggableWord(index, word)
@@ -138,7 +145,7 @@
                         <div class="dropdown">
                             <button class="btn btn-default dropdown-toggle" type="button"
                                     id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                Menu<span class="caret"></span>
+                                <span id="currentMenu">Menu</span> &nbsp; <span class="caret"></span>
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                                 <li><a href="#">Action</a></li>
