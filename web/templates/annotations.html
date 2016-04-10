@@ -26,6 +26,7 @@
         </style>
         <script>
 
+            var annotationList = [];
             var food_item_selected;
             var menu_item_selected;
 
@@ -56,10 +57,12 @@
 
                     if($('.sentimentButton.btn-primary').length == 1)
                     {
-                        console.log($('.sentimentButton.btn-primary')[0].childNodes[0]);
-                        console.log(food_item_selected);
-                        console.log(menu_item_selected);
-
+                        annotation = {
+                            'foodItem' : food_item_selected,
+                            'menuItem' : menu_item_selected,
+                            'sentiment': $('.sentimentButton.btn-primary')[0].childNodes[0].data
+                        };
+                        console.log(annotation);
                         $('#foodItemModal').modal('hide');
                     }
 
