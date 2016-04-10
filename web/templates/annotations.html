@@ -46,6 +46,13 @@
 
                     }
                 });
+                var food_item_selected;
+                var menu_item_selected;
+
+                // Saving the menu item with the annotation
+                $('#saveMenuItem').on('click', function (e) {
+                    alert(food_item_selected);
+                });
 
                 // Handle next food item
                 $('#nextFoodItem').on('click', function (e) {
@@ -89,8 +96,10 @@
 
                 $(".dropdown-menu li a").click(function(){
 
-                  $("#currentMenu").text($(this).text());
-                  $("#currentMenu").val($(this).text());
+                    $("#currentMenu").text($(this).text());
+                    $("#currentMenu").val($(this).text());
+
+                    menu_item_selected = $(this).text();
 
                });
             });
@@ -173,7 +182,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button id="saveMenuItem" type="button" class="btn btn-primary">Save changes</button>
             </div>
         </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
