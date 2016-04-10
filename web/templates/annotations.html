@@ -21,8 +21,7 @@
             }
 
             .draggable{
-                border-style: dotted solid;
-                border-width: 2px;
+                border: 1px solid black;
             }
         </style>
         <script>
@@ -97,11 +96,15 @@
 </div>
 <div class="row">
     <div class="col-md-4 col-md-offset-4">
-       <div id="droppable" class="ui-widget-header centered">
-           <h6>Item Collection</h6>
-           <div id="food_items">
-           </div>
-       </div>
+        <div id="droppable" class="ui-widget-header centered">
+            <h6>Food Items</h6>
+            <div id="food_items">
+            </div>
+        </div>
+       <div class="btn-group" role="group" id="annotation_buttonGroup">
+            <button type="button" class="btn btn-default annotation_button">Next Food Item</button>
+            <button type="button" class="btn btn-default annotation_button">Next Review</button>
+        </div>
     </div>
     <div class="col-md-4"></div>
 </div>
