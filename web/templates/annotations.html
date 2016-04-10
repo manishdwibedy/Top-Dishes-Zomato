@@ -47,6 +47,14 @@
                     }
                 });
 
+                // Handle next food item
+                $('#nextFoodItem').on('click', function (e) {
+                    food_item_selected = $('#food_items').html().split(",");
+                    $('#food_items').html('');
+                    alert('Food Items ' + food_item_selected);
+                    $('#droppable').removeClass( "ui-state-highlight");
+                });
+
 
                 $( "#droppable" ).droppable({
                     drop: function( event, ui ) {
@@ -86,6 +94,8 @@
 
                 return html;
             }
+
+
         </script>
     </head>
 <body>
@@ -102,7 +112,7 @@
             </div>
         </div>
        <div class="btn-group" role="group" id="annotation_buttonGroup">
-            <button type="button" class="btn btn-default annotation_button">Next Food Item</button>
+            <button id="nextFoodItem" type="button" class="btn btn-default annotation_button">Next Food Item</button>
             <button type="button" class="btn btn-default annotation_button">Next Review</button>
         </div>
     </div>
