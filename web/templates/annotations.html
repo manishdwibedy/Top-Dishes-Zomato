@@ -25,6 +25,10 @@
             }
         </style>
         <script>
+
+            var food_item_selected;
+            var menu_item_selected;
+
             $(function() {
 
                 // Get the review words
@@ -46,12 +50,19 @@
 
                     }
                 });
-                var food_item_selected;
-                var menu_item_selected;
 
                 // Saving the menu item with the annotation
                 $('#saveMenuItem').on('click', function (e) {
-                    alert(food_item_selected);
+
+                    if($('.sentimentButton.btn-primary').length == 1)
+                    {
+                        console.log($('.sentimentButton.btn-primary')[0].childNodes[0]);
+                        console.log(food_item_selected);
+                        console.log(menu_item_selected);
+
+                        $('#foodItemModal').modal('hide');
+                    }
+
                 });
 
                 // Handle next food item
