@@ -23,6 +23,12 @@ def saveAnnotation():
     annotations = request.get_json()
 
     if len(annotations['annotations']) > 0:
+        annotationList = annotations['annotations']
+
+        for annotation in annotationList:
+            print 'Food Item - ' + str(annotation['foodItem'])
+            print 'Menu Item - ' + annotation['menuItem']
+            print 'Sentiment - ' + annotation['sentiment']
         result = {'status': 'Done'}
     else:
         result = {'status': 'Missing Data'}

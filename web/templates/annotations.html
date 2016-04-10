@@ -92,7 +92,17 @@
                         contentType: 'application/json',
                         dataType : 'json',
                         success: function(response) {
-                            console.log(response);
+
+                            if (response.results.status != 'Done')
+                            {
+                                alert('Missing Data');
+                            }
+                            else
+                            {
+                                // On success, reset the annotation list
+                                annotationList = [];
+
+                            }
                         },
                         error: function(error) {
                             console.log(error);
