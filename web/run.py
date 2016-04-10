@@ -1,4 +1,4 @@
-from flask import Flask, render_template, jsonify
+from flask import Flask, render_template, jsonify, request
 import re
 
 app = Flask(__name__)
@@ -17,6 +17,16 @@ def getReviews():
     words = re.sub("[^\w]", " ",  review).split()
 
     return jsonify(results=words)
+
+@app.route('/saveAnnotation', methods=['PUT'])
+def saveAnnotation():
+    annotations = request.get_json()
+
+    if len(annotations['annotations']) > 0:
+        result = {'status': 'Done'}
+    else:
+        result = {'status': 'Missing Data'}
+    return jsonify(results=result)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0')

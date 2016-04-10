@@ -81,7 +81,23 @@
 
                 // Handle next food item
                 $('#nextreview').on('click', function (e) {
-                    console.log(JSON.stringify(annotationList));
+                    annotationObj = {
+                        'annotations': annotationList
+                    };
+
+                    $.ajax({
+                        url: '/saveAnnotation',
+                        data: JSON.stringify(annotationObj),
+                        type: 'PUT',
+                        contentType: 'application/json',
+                        dataType : 'json',
+                        success: function(response) {
+                            console.log(response);
+                        },
+                        error: function(error) {
+                            console.log(error);
+                        }
+                    });
                 });
 
 
