@@ -13,8 +13,7 @@ def annotator():
 
 @app.route('/getReview')
 def getReviews():
-    review = 'Coffee was decent, but not memorable enough to become a regular.'
-    review = review * 5
+    review = 'The concept is totally unscripted as the name suggests. The live kitchen is really awesome here. Pick up your own veggies with your favourite toppings and sause and your food is ready. You can see the live kitchen. The ambience is really offbeat and you cannot compare it to any restaurant in Gurgaon. Especially on evening it is very romantic place for couples.'
     words = re.sub("[^\w]", " ",  review).split()
 
     return jsonify(results=words)
