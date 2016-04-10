@@ -52,10 +52,9 @@
                     food_item_selected = $('#food_items').html().split(",");
                     $('#food_items').html('');
                     $('#food_item').html(food_item_selected);
-                    //alert('Food Items ' + food_item_selected);
                     $('#droppable').removeClass( "ui-state-highlight");
 
-                    $('#myModal').modal('show');
+                    $('#foodItemModal').modal('show');
                 });
 
 
@@ -122,7 +121,7 @@
     <div class="col-md-4"></div>
 </div>
 
-<div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+<div id="foodItemModal" class="modal fade" tabindex="-1" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
