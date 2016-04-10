@@ -63,6 +63,7 @@
                             'sentiment': $('.sentimentButton.btn-primary')[0].childNodes[0].data
                         };
                         console.log(annotation);
+                        annotationList.push(annotation);
                         $('#foodItemModal').modal('hide');
                     }
 
@@ -76,6 +77,11 @@
                     $('#droppable').removeClass( "ui-state-highlight");
 
                     $('#foodItemModal').modal('show');
+                });
+
+                // Handle next food item
+                $('#nextreview').on('click', function (e) {
+                    console.log(JSON.stringify(annotationList));
                 });
 
 
@@ -151,7 +157,7 @@
         </div>
        <div class="btn-group" role="group" id="annotation_buttonGroup">
             <button id="nextFoodItem" type="button" class="btn btn-default annotation_button">Next Food Item</button>
-            <button type="button" class="btn btn-default annotation_button">Next Review</button>
+            <button id="nextreview" type="button" class="btn btn-default annotation_button">Next Review</button>
         </div>
     </div>
     <div class="col-md-4"></div>
