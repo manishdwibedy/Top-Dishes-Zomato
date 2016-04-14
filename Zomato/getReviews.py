@@ -45,8 +45,16 @@ def get_reviews(restaurant_id, start = 0, count = 5):
 
         # An individual user review
         user_review = {
+            'id': review['review']['id'],
+            'likes': review['review']['likes'],
             'rating' : review['review']['rating'],
-            'review_text': ascii_review
+            'rating_text' : review['review']['rating_text'],
+            'review_text': ascii_review,
+            'timestamp': review['review']['timestamp'],
+            'user_name': review['review']['user']['name'],
+            'user_foodie_level': review['review']['user']['foodie_level'],
+            'user_foodie_level_num': review['review']['user']['foodie_level_num']
+
         }
 
         # Adding to the final list of user reviews
