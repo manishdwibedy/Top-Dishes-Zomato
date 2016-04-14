@@ -1,4 +1,5 @@
 from flask import Flask, render_template, jsonify, request
+from Get_Zomato_Solr import getUnannotatedReviews
 import re
 
 app = Flask(__name__)
@@ -13,8 +14,12 @@ def annotator():
 
 @app.route('/getReview')
 def getReviews():
-    review = 'The concept is totally unscripted as the name suggests. The live kitchen is really awesome here. Pick up your own veggies with your favourite toppings and sause and your food is ready. You can see the live kitchen. The ambience is really offbeat and you cannot compare it to any restaurant in Gurgaon. Especially on evening it is very romantic place for couples.'
-    words = re.sub("[^\w]", " ",  review).split()
+    reviews = getUnannotatedReviews.getUntaggedReviews()
+
+    if reviews is None:
+        reviews = 'No review found'
+
+    words = re.sub("[^\w]", " ",  reviews).split()
 
     return jsonify(results=words)
 
