@@ -2,8 +2,8 @@ import getRestaurant
 import getReviews
 from util import constant
 
-def getAllReviews(city_id):
-    restaurantList = getRestaurant.get_restaurants_city(city_id, 0, 10)
+def getAllReviews(city_id, start_city_index, count_city):
+    restaurantList = getRestaurant.get_restaurants_city(city_id, start_city_index, count_city)
 
     reviewList = []
     for restaurant_id in restaurantList:
@@ -15,6 +15,6 @@ def getAllReviews(city_id):
 if __name__ == '__main__':
     New_Delhi = constant.city_id
 
-    reviewList = getAllReviews(New_Delhi)
+    reviewList = getAllReviews(New_Delhi, 0, 10)
 
     print reviewList
