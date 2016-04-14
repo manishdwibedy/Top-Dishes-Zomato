@@ -82,6 +82,7 @@
                     $('#droppable').removeClass( "ui-state-highlight");
 
                     $('#foodItemModal').modal('show');
+                    resetFoodItemSentiment();
                 });
 
                 // Handle next food item
@@ -89,7 +90,6 @@
                     annotationObj = {
                         'annotations': annotationList
                     };
-
                     $.ajax({
                         url: '/saveAnnotation',
                         data: JSON.stringify(annotationObj),
@@ -170,7 +170,11 @@
                 return html;
             }
 
-
+            function resetFoodItemSentiment()
+            {
+                $("#currentMenu").text('-Select-');
+                $('.sentimentButton').removeClass('btn-primary')
+            }
         </script>
     </head>
 <body>
@@ -211,7 +215,7 @@
                         <div class="dropdown">
                             <button class="btn btn-default dropdown-toggle" type="button"
                                     id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                <span id="currentMenu">Menu</span> &nbsp; <span class="caret"></span>
+                                <span id="currentMenu">-Select-</span> &nbsp; <span class="caret"></span>
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                                 <li><a href="#">Action</a></li>
