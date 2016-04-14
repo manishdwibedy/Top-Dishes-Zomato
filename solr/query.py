@@ -1,15 +1,18 @@
 import connection
 
-def get(connection, collection, query):
+def get(connection, collection, query, rows = -1):
     """
     Getting the data from collection matching the query
     :param connection: the Solr Connection
     :param collection: the Solr Collection
     :param query: Solr Query
+    :param rows: number of rows to return
     :return: the list of documents returned by Solr
     """
-
-    return connection[collection].search({'q':query})
+    if rows == -1:
+        return connection[collection].search({'q':query})
+    else:
+        return connection[collection].search({'q':query,'rows': rows})
 
 def getCount(connection, collection, query):
     """
