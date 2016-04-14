@@ -33,6 +33,7 @@ client_id = "Top-Dishes-Zomato"
 client_secret = "9y9VYW8rKl7wov/qgBbKxNzgY7VXpmxUhPMEWv2VebQ="
 scope = "http://api.microsofttranslator.com"
 grant_type = "client_credentials"
+lang = "hi"
 
 ###########
 ####OCR API
