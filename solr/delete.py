@@ -1,5 +1,6 @@
 import connection
 import query
+from util import constant
 
 def delete(connection, collection, query):
     """
@@ -14,9 +15,9 @@ def delete(connection, collection, query):
 
 if __name__ == '__main__':
     connection = connection.get_connection()
-    queryString = 'id:2'
-    delete(connection, 'zomato_reviews',queryString)
+    queryString = 'id:*'
+    delete(connection, constant.RESTAURANTS_COLLECTION,queryString)
 
-    # output = query.get(connection, '*:*')
-    # print output
+    output = query.get(connection, constant.RESTAURANTS_COLLECTION, '*:*')
+    print output
 
