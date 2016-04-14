@@ -48,3 +48,9 @@ OCR_BASE_URL = 'https://api.ocr.space/parse/image'
 OCR_MENU_URL = 'https://b.zmtcdn.com/data/menus/318/16774318/64dbf28b1c7ea97d90baf142e598b289.jpg'
 
 
+#######
+## SOLR
+#######
+
+REVIEWS_COLLECTION = 'zomato_reviews'
+RESTAURANTS_COLLECTION = 'zomato_restaurants'
