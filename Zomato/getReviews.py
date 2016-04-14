@@ -54,7 +54,8 @@ def get_reviews(restaurant_id, start = 0, count = 5):
             'timestamp': review['review']['timestamp'],
             'user_name': review['review']['user']['name'],
             'user_foodie_level': review['review']['user']['foodie_level'],
-            'user_foodie_level_num': review['review']['user']['foodie_level_num']
+            'user_foodie_level_num': review['review']['user']['foodie_level_num'],
+            'annotated': False
         }
 
         # Adding to the final list of user reviews
