@@ -96,7 +96,7 @@ def get_restaurant_info_city(city_id, start = 0, count = 5):
         # Get the restaurant ID
         res_data = restaurant['restaurant']
         restaurant_info = {
-            'res_id': res_data['id'],
+            'id': res_data['id'],
             'name': res_data['name'],
             'cuisines': res_data['cuisines'],
             'menu_url': res_data['menu_url'],
