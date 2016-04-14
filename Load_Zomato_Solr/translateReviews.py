@@ -26,15 +26,11 @@ def translateReviews(token):
 
     translatedReviewList = []
     for review in reviewsList:
-        review_id = review['id']
         review_original = review['review_text'][0]
         hindiReview = translateReview(token, review_original)
 
-        translatedReview = {
-            'id': review_id,
-            'translated': hindiReview
-        }
-        translatedReviewList.append(translatedReview)
+        review['hindi'] = hindiReview
+        translatedReviewList.append(review)
     index.index(conn, constant.REVIEWS_COLLECTION, translatedReviewList)
 
 
