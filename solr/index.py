@@ -1,9 +1,16 @@
 import connection
 import query
 
-def index(connection, document):
-    connection["zomato"].add(document)
-    connection["zomato"].commit()
+def index(connection, collection, document):
+    """
+    Add the documents to the collection using the Solr connection.
+    :param connection: the solr connection
+    :param collection: the solr collection
+    :param document: the documents to be index
+    :return: Nothing
+    """
+    connection[collection].add(document)
+    connection[collection].commit()
 
 if __name__ == '__main__':
     connection = connection.get_connection()
