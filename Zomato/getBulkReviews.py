@@ -12,7 +12,7 @@ def getAllReviews(city_id, start_city_index, count_city):
     :param count_city: number of restaurant
     :return:
     """
-    restaurantList = getRestaurant.get_restaurants_city(city_id, start_city_index, count_city)
+    restaurantList = getRestaurant.get_restaurant_id_city(city_id, start_city_index, count_city)
 
     reviewList = []
     for restaurant_id in restaurantList:

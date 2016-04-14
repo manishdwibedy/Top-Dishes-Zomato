@@ -2,7 +2,7 @@ import requests
 import json
 from util import constant
 
-def get_restaurants_city(city_id, start = 0, count = 5):
+def get_restaurant_id_city(city_id, start = 0, count = 5):
     '''
     Getting the list of restaurant in a city
     :param city_id: city ID
@@ -59,6 +59,6 @@ if __name__ == "__main__":
     num_of_restaurants = 10
 
     # Get 'num_of_restaurants' restaurants in New Delhi
-    restaurants_id_list = get_restaurants_city(restaurant_id, count=num_of_restaurants)
+    restaurants_id_list = get_restaurant_id_city(restaurant_id, count=num_of_restaurants)
     print restaurants_id_list
 
