@@ -24,7 +24,6 @@ def addToSolr(reviews):
     """
     conn = connection.get_connection()
     index.index(conn, constant.REVIEWS_COLLECTION, reviews)
-    pass
 
 
 if __name__ == '__main__':
