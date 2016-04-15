@@ -25,15 +25,38 @@ def getReviews():
 
 @app.route('/saveAnnotation', methods=['PUT'])
 def saveAnnotation():
-    annotations = request.get_json()
+    data = request.get_json()
+    reviewID = data['reviewID']
+    if len(data['annotations']) > 0:
+        annotationList = data['annotations']
 
-    if len(annotations['annotations']) > 0:
-        annotationList = annotations['annotations']
+        food_list = []
+        menu_list = []
+        sentiment_list = []
 
         for annotation in annotationList:
+
+            # Computing the food item
+            food = ''
+            for fooditem in annotation['foodItem']:
+                food += fooditem + ' '
+
+            # Save the annotations
+            food_list.append(food)
+            menu_list.append(annotation['menuItem'])
+            sentiment_list.append(annotation['sentiment'])
+
             print 'Food Item - ' + str(annotation['foodItem'])
             print 'Menu Item - ' + annotation['menuItem']
             print 'Sentiment - ' + annotation['sentiment']
+
+        annotations = {
+            'food_list': food_list,
+            'menu_list': menu_list,
+            'sentiment': sentiment_list
+        }
+        annotateReview.annotateReview(reviewID, annotations)
+
         result = {'status': 'Done'}
     else:
         result = {'status': 'Missing Data'}
