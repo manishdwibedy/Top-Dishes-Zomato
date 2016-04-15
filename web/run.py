@@ -19,7 +19,7 @@ def getReviews():
     if reviews is None:
         reviews = 'No review found'
 
-    words = re.sub("[^\w]", " ",  reviews).split()
+    words = reviews.split()
 
     return jsonify(results=words)
 
