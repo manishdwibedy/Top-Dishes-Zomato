@@ -62,5 +62,11 @@ def saveAnnotation():
         result = {'status': 'Missing Data'}
     return jsonify(results=result)
 
+@app.route('/getMenu', methods=['PUT'])
+def getMenu():
+    data = request.get_json()
+    result = []
+    return jsonify(results=result)
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
