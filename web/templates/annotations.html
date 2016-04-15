@@ -34,7 +34,7 @@
             var annotationList = [];
             var food_item_selected;
             var menu_item_selected;
-
+            var reviewID;
             $(function() {
 
                 // Get the review words
@@ -89,8 +89,10 @@
                 // Handle next food item
                 $('#nextreview').on('click', function (e) {
                     annotationObj = {
-                        'annotations': annotationList
+                        'annotations': annotationList,
+                        'reviewID': reviewID
                     };
+
                     $.ajax({
                         url: '/saveAnnotation',
                         data: JSON.stringify(annotationObj),
