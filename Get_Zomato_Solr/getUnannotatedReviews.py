@@ -1,6 +1,9 @@
 from solr import connection, query
 from util import constant
+import re
 
+def seperatePunctuations():
+    pass
 def getUntaggedReviews():
     conn = connection.get_connection()
     data = query.get(conn, constant.REVIEWS_COLLECTION, 'annotated:false', 1)
@@ -8,7 +11,19 @@ def getUntaggedReviews():
     reviewsList = data.result.response.docs
 
     if len(reviewsList) == 1:
-        return reviewsList[0]['hindi'][0]
+        hindi = reviewsList[0]['hindi'][0]
+        words = hindi.split(' ')
+        reviewText = []
+        for word in words:
+            chars = set('-!$%^&*()_+|~=`{}\[\]:;<>?,.\/')
+            if any((c in chars) for c in word):
+                insertedSpace = re.sub(r'(.*)([-!$%^&*()_+|~=`{}\[\]:";<>?,.\/])(.*)', r"\1 \2 \3",  word).strip()
+                spaces = insertedSpace.split(' ')
+                for spaceText in spaces:
+                    reviewText.append(spaceText)
+            else:
+                reviewText.append(word)
+        return reviewText
     else:
         return None
 
