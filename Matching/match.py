@@ -1,14 +1,29 @@
 # from fuzzywuzzy import fuzz
 # from Levenshtein import *
+
 def exactMatch(reviewFoodItem, menuItem):
+    """
+    Extracting exact matches from the list of menu items
+    :param reviewFoodItem: the food item
+    :param menuItem: the list of menu items
+    :return: the list of exact matches
+    """
+
+    # Couning the number of words in the review food item
     length = len(reviewFoodItem.split(" "))
 
+    # Collecting the possible matches
     possibleMatches = []
-    for item in menuItem:
 
+    # Loop over every menu item
+    for item in menuItem:
+        # If all the words in the menu item matched
         if numWordsExactMatches(reviewFoodItem, item) == length:
+            # Add to the list of possible matches
             possibleMatches.append(item)
-    print possibleMatches
+    # Returning the list of exact matches
+    return possibleMatches
+
 def partialMatch(reviewFoodItem, menuItem):
     length=len(reviewFoodItem.split(" "))
 
