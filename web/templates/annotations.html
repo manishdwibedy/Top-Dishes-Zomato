@@ -44,6 +44,7 @@
                     dataType: 'json',
                     success: function (data) {
                         reviewWords = data.results;
+                        reviewID = data.id;
 
                         // Get each word of the review
                         $.each(reviewWords, function(index, word) {
