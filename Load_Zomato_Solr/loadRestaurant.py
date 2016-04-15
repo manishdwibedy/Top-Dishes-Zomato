@@ -1,6 +1,6 @@
 from Zomato import getRestaurant
 from util import constant
-from solr import connection, index
+from solr import connection, index, query
 
 def getRestaurants(city_id, city_index, city_count):
     """
@@ -16,6 +16,18 @@ def getRestaurants(city_id, city_index, city_count):
 
     return restaurants
 
+def getAllRestaurants():
+    conn = connection.get_connection()
+    docs = query.get(conn, constant.REVIEWS_COLLECTION, 'id:*')
+
+    res_ids = set()
+    reviews = docs.result.dict['response']['docs']
+
+    for review in reviews:
+        res_id = review['res_id']
+        res_ids.add(res_id[0])
+    return
+
 def addToSolr(restaurants):
     """
     Add the restaurants to the solr index
@@ -29,7 +41,8 @@ def addToSolr(restaurants):
 
 if __name__ == '__main__':
     New_Delhi = constant.city_id
-    restaurants = getRestaurants(New_Delhi, 0, 2)
+    # restaurants = getRestaurants(New_Delhi, 0, 2)
+    restaurants = getAllRestaurants()
 
     addToSolr(restaurants)
     pass
