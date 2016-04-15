@@ -14,14 +14,12 @@ def annotator():
 
 @app.route('/getReview')
 def getReviews():
-    reviews = getUnannotatedReviews.getUntaggedReviews()
+    reviewWord = getUnannotatedReviews.getUntaggedReviews()
 
-    if reviews is None:
-        reviews = 'No review found'
+    if reviewWord is None:
+        reviewWord = []
 
-    words = reviews.split()
-
-    return jsonify(results=words)
+    return jsonify(results=reviewWord)
 
 @app.route('/saveAnnotation', methods=['PUT'])
 def saveAnnotation():
