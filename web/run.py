@@ -1,6 +1,6 @@
 from flask import Flask, render_template, jsonify, request
 from Get_Zomato_Solr import getUnannotatedReviews
-import re
+from Load_Zomato_Solr import annotateReview
 
 app = Flask(__name__)
 
@@ -14,12 +14,14 @@ def annotator():
 
 @app.route('/getReview')
 def getReviews():
-    reviewWord = getUnannotatedReviews.getUntaggedReviews()
+    data = getUnannotatedReviews.getUntaggedReviews()
 
-    if reviewWord is None:
-        reviewWord = []
+    reviews = data['review']
+    id = data['id']
+    if reviews is None:
+        reviews = []
 
-    return jsonify(results=reviewWord)
+    return jsonify(results=reviews, id=id)
 
 @app.route('/saveAnnotation', methods=['PUT'])
 def saveAnnotation():
