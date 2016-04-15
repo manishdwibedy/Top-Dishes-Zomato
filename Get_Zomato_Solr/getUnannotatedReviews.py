@@ -8,7 +8,7 @@ def getUntaggedReviews():
     reviewsList = data.result.response.docs
 
     if len(reviewsList) == 1:
-        return reviewsList[0]['review_text'][0]
+        return reviewsList[0]['hindi'][0]
     else:
         return None
 
