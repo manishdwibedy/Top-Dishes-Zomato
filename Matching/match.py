@@ -1,6 +1,14 @@
 
-import math
-def partialmatch(reviewFoodItem, menuItem):
+def exactMatch(reviewFoodItem, menuItem):
+    length = len(reviewFoodItem.split(" "))
+
+    possibleMatches = []
+    for item in menuItem:
+
+        if numWordsExactMatches(reviewFoodItem, item) == length:
+            possibleMatches.append(item)
+    print possibleMatches
+def partialMatch(reviewFoodItem, menuItem):
     length=len(reviewFoodItem.split(" "))
 
     possibleMatches=[]
@@ -21,5 +29,6 @@ def numWordsExactMatches(mention, item):
     return numMatches
 
 reviewFoodItem="Chicken Tikka Masala"
-menuItem=['Butter Chicken', 'Chicken Tikka Tandori','Paneer Tikka Masala','Mango Lassi','Tandori','Tikka']
-partialmatch(reviewFoodItem,menuItem)
+menuItem=['Butter Chicken','Chicken Tikka Masala', 'Tikka Chicken Masala', 'Chicken Tika Masala', 'Chicken Tikka Tandori','Paneer Tikka Masala','Mango Lassi','Tandori','Tikka']
+partialMatch(reviewFoodItem,menuItem)
+exactMatch(reviewFoodItem,menuItem)
