@@ -16,7 +16,11 @@ def getRestaurants(city_id, city_index, city_count):
 
     return restaurants
 
-def getAllRestaurants():
+def getAllRestaurantID():
+    """
+    Returning the restaurant IDs if a review is present
+    :return:
+    """
     conn = connection.get_connection()
     docs = query.get(conn, constant.REVIEWS_COLLECTION, 'id:*')
 
@@ -26,7 +30,7 @@ def getAllRestaurants():
     for review in reviews:
         res_id = review['res_id']
         res_ids.add(res_id[0])
-    return
+    return res_ids
 
 def addToSolr(restaurants):
     """
@@ -42,7 +46,7 @@ def addToSolr(restaurants):
 if __name__ == '__main__':
     New_Delhi = constant.city_id
     # restaurants = getRestaurants(New_Delhi, 0, 2)
-    restaurants = getAllRestaurants()
+    restaurants = getAllRestaurantID()
 
     addToSolr(restaurants)
     pass
