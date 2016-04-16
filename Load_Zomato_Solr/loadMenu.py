@@ -1,8 +1,14 @@
-from solr import query, connection
+from solr import query, connection, index
 from util import constant
 
-def loadMenuData():
-    pass
+def loadMenuData(conn, resList):
+    """
+    Loading the restaurant info with the menu
+    :param conn: Solr connection
+    :param resList: the list of restaurant with menu list added
+    :return: Nothing
+    """
+    index.index(conn, constant.RESTAURANTS_COLLECTION, resList)
 
 def readMenuFiles(filename):
     """
@@ -13,13 +19,15 @@ def readMenuFiles(filename):
     conn = connection.get_connection()
     response = query.get(conn, constant.RESTAURANTS_COLLECTION, 'id:*')
 
-    res = response.result.dict['response']['docs']
-    menuItems = []
+    resList = response.result.dict['response']['docs']
 
-    with open(filename) as menuFile:
-        for menuItem in menuFile:
-            menuItems.append(menuItem)
-    return menuItems
+    for res in resList:
+        menuItems = []
+        with open('menuData/menu_' + res['id'] + '.txt') as menuFile:
+            for menuItem in menuFile:
+                menuItems.append(menuItem.strip())
+        res['menu'] = menuItems
+    return resList
 
 if __name__ == '__main__':
     res_id = 1
