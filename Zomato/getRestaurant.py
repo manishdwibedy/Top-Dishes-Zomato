@@ -114,6 +114,50 @@ def get_restaurant_info_city(city_id, start = 0, count = 5):
     # Returning the final list of restaurants ID
     return restaurants_list
 
+def getRestaurants(restaurant_id):
+    """
+    Getting the information for the restaurant
+    :param restaurant_id: the id for the restaurant
+    :return: the restaurant info in the form of a dict
+    """
+    # URL to hit for getting the info for the restaurant
+    URL = constant.zomato_base_url + 'restaurant'
+
+    # headers needed by the API to get restaurant info
+    headers = {
+        'Accept': 'application/json',
+        'user-key': constant.zomato_api_key,
+        "User-agent": "curl/7.43.0"
+    }
+
+    # parameters needed by the API to get restaurant info
+    payload = {
+        'res_id': restaurant_id,
+    }
+
+    # Hitting the API with needed headers and parameters
+    response = requests.get(URL, headers=headers, params=payload)
+
+    # Converting the response to an object
+    restaurantsObject = json.loads(response.text)
+
+    # Creating the restaurant dict
+    restaurant_info = {
+        'id': restaurantsObject['id'],
+        'name': restaurantsObject['name'],
+        'cuisines': restaurantsObject['cuisines'],
+        'menu_url': restaurantsObject['menu_url'],
+        'price_range': restaurantsObject['price_range'],
+        'rating': restaurantsObject['user_rating']['aggregate_rating'],
+        'rating_text': restaurantsObject['user_rating']['rating_text'],
+        'votes': restaurantsObject['user_rating']['votes'],
+        'delivers': restaurantsObject['is_delivering_now'],
+        'online_delivery': restaurantsObject['has_online_delivery'],
+        'cost_for_two': restaurantsObject['average_cost_for_two']
+    }
+    # Returning the restaurant info
+    return restaurant_info
+
 if __name__ == "__main__":
     # The city id for New Delhi
     restaurant_id = constant.city_id
@@ -123,6 +167,8 @@ if __name__ == "__main__":
     get_restaurant_info_city(restaurant_id, count=num_of_restaurants)
 
     # Get 'num_of_restaurants' restaurants in New Delhi
-    restaurants_id_list = get_restaurant_id_city(restaurant_id, count=num_of_restaurants)
-    print restaurants_id_list
+    # restaurants_id_list = get_restaurant_id_city(restaurant_id, count=num_of_restaurants)
+    # print restaurants_id_list
+    getRestaurants('799')
+
 
