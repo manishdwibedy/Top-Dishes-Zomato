@@ -10,6 +10,7 @@ def annotateReview(reviewID, annotations):
     review['food_item'] = annotations['food_list']
     review['menu_item'] = annotations['menu_list']
     review['sentiment'] = annotations['sentiment']
+    review['annotated'] = True
 
     index.index(conn, constant.REVIEWS_COLLECTION, [review])
 

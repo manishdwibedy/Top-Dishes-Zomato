@@ -109,7 +109,6 @@
 
                             $('#foodItemModal').modal('show');
                             resetFoodItemSentiment();
-
                         }
                     });
 
@@ -128,6 +127,7 @@
                         data: JSON.stringify(annotationObj),
                         type: 'PUT',
                         dataType : 'json',
+                        contentType: 'application/json',
                         success: function(response) {
 
                             if (response.results.status != 'Done')
@@ -177,20 +177,15 @@
                     }
                 });
 
-                $(".menuItems li a").click(function(){
 
-                    $("#currentMenu").text($(this).text());
-                    $("#currentMenu").val($(this).text());
-
-                    menu_item_selected = $(this).text();
-
-               });
 
                 // .btn is the class of the element you want to change color
                 $(".sentimentButton").click(function() {
 
                     $(this).removeClass('btn-success').toggleClass('btn-primary');
                 });
+
+                $(document).on('click', '.dropdown-menu li a', getSelectedMenuItem);
             });
 
             function createDraggableWord(index, word)
@@ -206,6 +201,14 @@
             {
                 $("#currentMenu").text('-Select-');
                 $('.sentimentButton').removeClass('btn-primary')
+            }
+
+            function getSelectedMenuItem()
+            {
+                $("#currentMenu").text($(this).text());
+                $("#currentMenu").val($(this).text());
+
+                menu_item_selected = $(this).text();
             }
         </script>
     </head>
