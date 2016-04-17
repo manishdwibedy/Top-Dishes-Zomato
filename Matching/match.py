@@ -120,4 +120,4 @@ def numWordsExactMatches(mention, item):
 # partialMatch(reviewFoodItem,menuItem)
 # exactMatch(reviewFoodItem,menuItem)
 # # fuzz.ratio("this is a test", "this is a test!")
-print damerau_levenshtein_distance("this is a test", "Dhruv")
+# print damerau_levenshtein_distance("this is a test", "Dhruv")
