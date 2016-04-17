@@ -12,7 +12,7 @@ def getUntaggedReviews():
 
     if len(reviewsList) == 1:
         hindi = reviewsList[0]['hindi'][0]
-        words = hindi.split(' ')
+        words = hindi[2:-1].split(' ')
         reviewText = []
         for word in words:
             chars = set('-!$%^&*()_+|~=`{}\[\]:;<>?,.\/')
@@ -21,6 +21,9 @@ def getUntaggedReviews():
                 spaces = insertedSpace.split(' ')
                 for spaceText in spaces:
                     reviewText.append(spaceText)
+            elif word.endswith(u'\u0964'):
+                reviewText.append(word[:-1])
+                reviewText.append(u'\u0964')
             else:
                 reviewText.append(word)
         return {
