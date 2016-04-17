@@ -34,7 +34,7 @@
             var annotationList = [];
             var food_item_selected;
             var menu_item_selected;
-
+            var reviewID;
             $(function() {
 
                 // Get the review words
@@ -44,6 +44,7 @@
                     dataType: 'json',
                     success: function (data) {
                         reviewWords = data.results;
+                        reviewID = data.id;
 
                         // Get each word of the review
                         $.each(reviewWords, function(index, word) {
@@ -77,24 +78,43 @@
                 // Handle next food item
                 $('#nextFoodItem').on('click', function (e) {
                     food_item_selected = $('#food_items').html().split(",");
-                    $('#food_items').html('');
-                    $('#food_item').html(food_item_selected);
-                    $('#droppable').removeClass( "ui-state-highlight");
 
-                    $('#foodItemModal').modal('show');
-                    resetFoodItemSentiment();
+                    food_items = {
+                        'food_item_selected': food_item_selected,
+                        'reviewID': reviewID
+                    };
+
+                    $.ajax({
+                        type: 'PUT',
+                        url: '/getMenu',
+                        data: JSON.stringify(food_items),
+                        dataType: 'json',
+                        contentType: 'application/json',
+                        success: function (data) {
+                            $('#food_items').html('');
+                            $('#food_item').html(food_item_selected);
+                            $('#droppable').removeClass( "ui-state-highlight");
+
+                            $('#foodItemModal').modal('show');
+                            resetFoodItemSentiment();
+
+                        }
+                    });
+
+
                 });
 
                 // Handle next food item
                 $('#nextreview').on('click', function (e) {
                     annotationObj = {
-                        'annotations': annotationList
+                        'annotations': annotationList,
+                        'reviewID': reviewID
                     };
+
                     $.ajax({
                         url: '/saveAnnotation',
                         data: JSON.stringify(annotationObj),
                         type: 'PUT',
-                        contentType: 'application/json',
                         dataType : 'json',
                         success: function(response) {
 

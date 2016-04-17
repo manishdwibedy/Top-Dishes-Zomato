@@ -1,12 +1,12 @@
 from flask import Flask, render_template, jsonify, request
 from Get_Zomato_Solr import getUnannotatedReviews
-import re
+from Load_Zomato_Solr import annotateReview
 
 app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return render_template('index.html')
+    return render_template('index2.html')
 
 @app.route('/annotate')
 def annotator():
@@ -14,27 +14,58 @@ def annotator():
 
 @app.route('/getReview')
 def getReviews():
-    reviewWord = getUnannotatedReviews.getUntaggedReviews()
+    data = getUnannotatedReviews.getUntaggedReviews()
 
-    if reviewWord is None:
-        reviewWord = []
+    reviews = data['review']
+    id = data['id']
+    if reviews is None:
+        reviews = []
 
-    return jsonify(results=reviewWord)
+    return jsonify(results=reviews, id=id)
 
 @app.route('/saveAnnotation', methods=['PUT'])
 def saveAnnotation():
-    annotations = request.get_json()
+    data = request.get_json()
+    reviewID = data['reviewID']
+    if len(data['annotations']) > 0:
+        annotationList = data['annotations']
 
-    if len(annotations['annotations']) > 0:
-        annotationList = annotations['annotations']
+        food_list = []
+        menu_list = []
+        sentiment_list = []
 
         for annotation in annotationList:
+
+            # Computing the food item
+            food = ''
+            for fooditem in annotation['foodItem']:
+                food += fooditem + ' '
+
+            # Save the annotations
+            food_list.append(food)
+            menu_list.append(annotation['menuItem'])
+            sentiment_list.append(annotation['sentiment'])
+
             print 'Food Item - ' + str(annotation['foodItem'])
             print 'Menu Item - ' + annotation['menuItem']
             print 'Sentiment - ' + annotation['sentiment']
+
+        annotations = {
+            'food_list': food_list,
+            'menu_list': menu_list,
+            'sentiment': sentiment_list
+        }
+        annotateReview.annotateReview(reviewID, annotations)
+
         result = {'status': 'Done'}
     else:
         result = {'status': 'Missing Data'}
+    return jsonify(results=result)
+
+@app.route('/getMenu', methods=['PUT'])
+def getMenu():
+    data = request.get_json()
+    result = []
     return jsonify(results=result)
 
 if __name__ == '__main__':

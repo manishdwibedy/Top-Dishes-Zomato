@@ -23,7 +23,10 @@ def getUntaggedReviews():
                     reviewText.append(spaceText)
             else:
                 reviewText.append(word)
-        return reviewText
+        return {
+            'id': reviewsList[0]['id'],
+            'review': reviewText
+        }
     else:
         return None
 
