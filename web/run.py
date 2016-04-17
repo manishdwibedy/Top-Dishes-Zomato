@@ -2,7 +2,7 @@ from flask import Flask, render_template, jsonify, request
 from Get_Zomato_Solr import getUnannotatedReviews
 from Load_Zomato_Solr import annotateReview
 from Get_Zomato_Solr.getMenu import getMenuItems
-
+from Matching import match
 app = Flask(__name__)
 
 @app.route('/')
@@ -65,7 +65,23 @@ def saveAnnotation():
 
 @app.route('/getMenu', methods=['PUT'])
 def getMenu():
-    pass
+    data = request.get_json()
+
+    # Extracting the data from the request
+    food_mentions = data['food_item_selected']
+    reviewId = data['reviewID']
+    restaurantID = data['restaurantID']
+
+    # Getting the menu items for the given restaurant
+    menuItems = getMenuItems(str(restaurantID))
+
+    # Join the individual word to make the food item
+    food_item = ' '.join(food_mentions)
+
+    # Getting the matches
+    matches = match.partialMatch(food_item, menuItems)
+
+    return jsonify(results=menuItems)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
