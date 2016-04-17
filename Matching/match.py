@@ -78,12 +78,13 @@ def numWordsMatch(mentionWords, itemWords):
         return False
 
 
+if __name__ == '__main__':
 
-reviewFoodItem="Chicken Tikka Masala"
-menuItem=['Butter Chicken','Chicken Tikka Masala', 'Tikka Chicken Masala', 'Chicken Tika Masala', 'Chicken Tikka Tandori','Paneer Tikka Masala','Mango Lassi','Tandori','Tikka']
-print partialMatch(reviewFoodItem,menuItem)
-print exactMatch(reviewFoodItem,menuItem)
+    reviewFoodItem="Chicken Tikka Masala"
+    menuItem=['Butter Chicken','Chicken Tikka Masala', 'Tikka Chicken Masala', 'Chicken Tika Masala', 'Chicken Tikka Tandori','Paneer Tikka Masala','Mango Lassi','Tandori','Tikka']
+    print partialMatch(reviewFoodItem,menuItem)
+    print exactMatch(reviewFoodItem,menuItem)
 
 
-print fuzzyMatch("chicken tipa", ["Chicken Tikka", "Panner Tikka"])
+    print fuzzyMatch("chicken tipa", ["Chicken Tikka", "Panner Tikka"])
 
