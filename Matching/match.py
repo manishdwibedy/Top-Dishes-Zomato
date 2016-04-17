@@ -42,6 +42,21 @@ def fuzzyMatch(reviewFoodItem, menuItem):
     return '' . join(possibleMatches) #Returning the list of exact matches by joining all characters without any space
 
 
+def substringMatch(reviewFoodItem, menuItem):
+    possibleMatches=[]
+    for item in menuItem:
+        if(substringMatches(reviewFoodItem,item)):
+            possibleMatches.append(item)
+    return possibleMatches
+
+def substringMatches(mention, item):
+    mention_words = mention.split(" ")
+    mention_word = ''.join(mention_words)
+    if item not in mention_word:
+        return False
+    else:
+        return True
+
 def numWordsExactMatches(mention, item):
     words = mention.split(" ")
     words_menuItem=item.split(" ")
@@ -80,11 +95,14 @@ def numWordsMatch(mentionWords, itemWords):
 
 if __name__ == '__main__':
 
-    reviewFoodItem="Chicken Tikka Masala"
-    menuItem=['Butter Chicken','Chicken Tikka Masala', 'Tikka Chicken Masala', 'Chicken Tika Masala', 'Chicken Tikka Tandori','Paneer Tikka Masala','Mango Lassi','Tandori','Tikka']
-    print partialMatch(reviewFoodItem,menuItem)
-    print exactMatch(reviewFoodItem,menuItem)
+
+reviewFoodItem="Chicken Tikka Masala"
+menuItem=['Butter Chicken','Chicken Tikka Masala', 'Tikka Chicken Masala', 'Chicken Tika Masala', 'Chicken Tikka Tandori','Paneer Tikka Masala','Mango Lassi','Tandori','Tikka']
+print partialMatch(reviewFoodItem,menuItem)
+print exactMatch(reviewFoodItem,menuItem)
 
 
-    print fuzzyMatch("chicken tipa", ["Chicken Tikka", "Panner Tikka"])
+print fuzzyMatch("chicken tipa", ["Chicken Tikka", "Panner Tikka"])
+print substringMatch("Chicken Tikka Masala", ["Chicken"])
+
 
