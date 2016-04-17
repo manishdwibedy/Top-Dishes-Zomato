@@ -30,4 +30,6 @@ def readMenuFiles():
 
 if __name__ == '__main__':
     res_id = 1
-    readMenuFiles('menu')
+    menuList = readMenuFiles()
+    conn = connection.get_connection()
+    loadMenuData(conn, menuList)
