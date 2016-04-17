@@ -2,7 +2,8 @@ from flask import Flask, render_template, jsonify, request
 from Get_Zomato_Solr import getUnannotatedReviews
 from Load_Zomato_Solr import annotateReview
 from Get_Zomato_Solr.getMenu import getMenuItems
-from Matching import match
+from Matching.match import partialMatch, fuzzyMatch
+
 app = Flask(__name__)
 
 @app.route('/')
@@ -78,10 +79,19 @@ def getMenu():
     # Join the individual word to make the food item
     food_item = ' '.join(food_mentions)
 
-    # Getting the matches
-    matches = match.partialMatch(food_item, menuItems)
+    # Getting the matches by fuzzy matching and partial matching
+    matches_fuzzy = fuzzyMatch(food_item, menuItems)
+    matches_partial = partialMatch(food_item, menuItems)
 
-    return jsonify(results=matches)
+    # Creating the matching list
+    matches = set()
+    for match in matches_fuzzy:
+        matches.add(match)
+
+    for match in matches_partial:
+        matches.add(match)
+
+    return jsonify(results=list(matches))
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
