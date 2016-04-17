@@ -39,7 +39,7 @@ def fuzzyMatch(reviewFoodItem, menuItem):
     for item in menuItem:
         if numWordsMatch(reviewFoodItem,item): #Call fucntion numWordsMatch
             possibleMatches.append(item) #Add to the list of possible matches
-    return '' . join(possibleMatches) #Returning the list of exact matches by joining all characters without any space
+    return possibleMatches #Returning the list of exact matches
 
 
 def substringMatch(reviewFoodItem, menuItem):
