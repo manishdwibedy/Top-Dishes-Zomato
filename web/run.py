@@ -1,6 +1,7 @@
 from flask import Flask, render_template, jsonify, request
 from Get_Zomato_Solr import getUnannotatedReviews
 from Load_Zomato_Solr import annotateReview
+from Get_Zomato_Solr.getMenu import getMenuItems
 
 app = Flask(__name__)
 
@@ -21,7 +22,7 @@ def getReviews():
     if reviews is None:
         reviews = []
 
-    return jsonify(results=reviews, id=id)
+    return jsonify(results=reviews, id=id, res_id=data['res_id'][0])
 
 @app.route('/saveAnnotation', methods=['PUT'])
 def saveAnnotation():
@@ -64,9 +65,7 @@ def saveAnnotation():
 
 @app.route('/getMenu', methods=['PUT'])
 def getMenu():
-    data = request.get_json()
-    result = []
-    return jsonify(results=result)
+    pass
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
