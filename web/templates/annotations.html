@@ -94,6 +94,15 @@
                         dataType: 'json',
                         contentType: 'application/json',
                         success: function (data) {
+                            menuItemList = data.results;
+
+                            $.each( menuItemList, function( index, menuItem ){
+                                menuItemHTML = '<li><a href="#">';
+                                menuItemHTML += menuItem;
+                                menuItemHTML += '</a></li>';
+                                $("#menuItems").append(menuItemHTML);
+                            });
+
                             $('#food_items').html('');
                             $('#food_item').html(food_item_selected);
                             $('#droppable').removeClass( "ui-state-highlight");
@@ -168,7 +177,7 @@
                     }
                 });
 
-                $(".dropdown-menu li a").click(function(){
+                $(".menuItems li a").click(function(){
 
                     $("#currentMenu").text($(this).text());
                     $("#currentMenu").val($(this).text());
@@ -240,12 +249,9 @@
                                     id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                                 <span id="currentMenu">-Select-</span> &nbsp; <span class="caret"></span>
                             </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" id="menuItems">
+                                <li><a href="#">No Matching Menu</a></li>
                                 <li role="separator" class="divider"></li>
-                                <li><a href="#">Separated link</a></li>
                             </ul>
                         </div>
                     </div>
