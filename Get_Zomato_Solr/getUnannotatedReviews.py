@@ -25,6 +25,7 @@ def getUntaggedReviews():
                 reviewText.append(word)
         return {
             'id': reviewsList[0]['id'],
+            'res_id': reviewsList[0]['res_id'],
             'review': reviewText
         }
     else:

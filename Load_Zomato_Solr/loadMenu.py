@@ -10,10 +10,9 @@ def loadMenuData(conn, resList):
     """
     index.index(conn, constant.RESTAURANTS_COLLECTION, resList)
 
-def readMenuFiles(filename):
+def readMenuFiles():
     """
-    Reading menu items from a file
-    :param filename: filename of the file containing menu
+    Reading menu items for all the restaurants, if present
     :return: a list of menu items
     """
     conn = connection.get_connection()

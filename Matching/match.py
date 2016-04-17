@@ -1,3 +1,4 @@
+
 import math
 
 
@@ -32,7 +33,7 @@ def partialMatch(reviewFoodItem, menuItem):
 
         if numWordsExactMatches(reviewFoodItem,item) >= math.ceil(float(length) / 2):
             possibleMatches.append(item)
-    print possibleMatches
+    return possibleMatches
 
 def fuzzyMatch(reviewFoodItem, menuItem):
     possibleMatches=[]
@@ -84,4 +85,6 @@ def numWordsMatch(mentionWords, itemWords):
 # partialMatch(reviewFoodItem,menuItem)
 # exactMatch(reviewFoodItem,menuItem)
 # # fuzz.ratio("this is a test", "this is a test!")
+
 print fuzzyMatch("chicken tipa", ["Chicken Tikka", "Panner Tikka"])
+
