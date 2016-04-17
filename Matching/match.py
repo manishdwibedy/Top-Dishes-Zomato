@@ -1,5 +1,6 @@
 # from fuzzywuzzy import fuzz
 # from Levenshtein import *
+import math
 
 def exactMatch(reviewFoodItem, menuItem):
     """
@@ -29,10 +30,9 @@ def partialMatch(reviewFoodItem, menuItem):
 
     possibleMatches=[]
     for item in menuItem:
-
-        if numWordsExactMatches(reviewFoodItem,item) >= length / 2:
+        if numWordsExactMatches(reviewFoodItem,item) >= math.ceil(float(length) / 2):
             possibleMatches.append(item)
-    print possibleMatches
+    return possibleMatches
 
 def numWordsExactMatches(mention, item):
     words = mention.split(" ")
