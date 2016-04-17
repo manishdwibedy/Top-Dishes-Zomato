@@ -1,6 +1,4 @@
-
 import math
-
 
 def exactMatch(reviewFoodItem, menuItem):
     """
@@ -80,11 +78,11 @@ def numWordsMatch(mentionWords, itemWords):
 
 
 
-# reviewFoodItem="Chicken Tikka Masala"
-# menuItem=['Butter Chicken','Chicken Tikka Masala', 'Tikka Chicken Masala', 'Chicken Tika Masala', 'Chicken Tikka Tandori','Paneer Tikka Masala','Mango Lassi','Tandori','Tikka']
-# partialMatch(reviewFoodItem,menuItem)
-# exactMatch(reviewFoodItem,menuItem)
-# # fuzz.ratio("this is a test", "this is a test!")
+reviewFoodItem="Chicken Tikka Masala"
+menuItem=['Butter Chicken','Chicken Tikka Masala', 'Tikka Chicken Masala', 'Chicken Tika Masala', 'Chicken Tikka Tandori','Paneer Tikka Masala','Mango Lassi','Tandori','Tikka']
+partialMatch(reviewFoodItem,menuItem)
+exactMatch(reviewFoodItem,menuItem)
+
 
 print fuzzyMatch("chicken tipa", ["Chicken Tikka", "Panner Tikka"])
 
