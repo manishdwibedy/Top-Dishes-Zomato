@@ -81,8 +81,8 @@ def numWordsMatch(mentionWords, itemWords):
 
 reviewFoodItem="Chicken Tikka Masala"
 menuItem=['Butter Chicken','Chicken Tikka Masala', 'Tikka Chicken Masala', 'Chicken Tika Masala', 'Chicken Tikka Tandori','Paneer Tikka Masala','Mango Lassi','Tandori','Tikka']
-partialMatch(reviewFoodItem,menuItem)
-exactMatch(reviewFoodItem,menuItem)
+print partialMatch(reviewFoodItem,menuItem)
+print exactMatch(reviewFoodItem,menuItem)
 
 
 print fuzzyMatch("chicken tipa", ["Chicken Tikka", "Panner Tikka"])
