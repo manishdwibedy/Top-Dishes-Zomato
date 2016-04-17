@@ -81,7 +81,7 @@ def getMenu():
     # Getting the matches
     matches = match.partialMatch(food_item, menuItems)
 
-    return jsonify(results=menuItems)
+    return jsonify(results=matches)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
