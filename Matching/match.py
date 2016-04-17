@@ -95,22 +95,14 @@ def numWordsMatch(mentionWords, itemWords):
 
 if __name__ == '__main__':
 
-<<<<<<< HEAD
-# reviewFoodItem="Chicken Tikka Masala"
-# menuItem=['Butter Chicken','Chicken Tikka Masala', 'Tikka Chicken Masala', 'Chicken Tika Masala', 'Chicken Tikka Tandori','Paneer Tikka Masala','Mango Lassi','Tandori','Tikka']
-# print partialMatch(reviewFoodItem,menuItem)
-# print exactMatch(reviewFoodItem,menuItem)
-#
-#
-# print fuzzyMatch("chicken tipa", ["Chicken Tikka", "Panner Tikka"])
+
+reviewFoodItem="Chicken Tikka Masala"
+menuItem=['Butter Chicken','Chicken Tikka Masala', 'Tikka Chicken Masala', 'Chicken Tika Masala', 'Chicken Tikka Tandori','Paneer Tikka Masala','Mango Lassi','Tandori','Tikka']
+print partialMatch(reviewFoodItem,menuItem)
+print exactMatch(reviewFoodItem,menuItem)
+
+
+print fuzzyMatch("chicken tipa", ["Chicken Tikka", "Panner Tikka"])
 print substringMatch("Chicken Tikka Masala", ["Chicken"])
-=======
-    reviewFoodItem="Chicken Tikka Masala"
-    menuItem=['Butter Chicken','Chicken Tikka Masala', 'Tikka Chicken Masala', 'Chicken Tika Masala', 'Chicken Tikka Tandori','Paneer Tikka Masala','Mango Lassi','Tandori','Tikka']
-    print partialMatch(reviewFoodItem,menuItem)
-    print exactMatch(reviewFoodItem,menuItem)
 
-
-    print fuzzyMatch("chicken tipa", ["Chicken Tikka", "Panner Tikka"])
->>>>>>> 5d84e398885bb8ef1141954e95fb70ffd1e937ac
 
