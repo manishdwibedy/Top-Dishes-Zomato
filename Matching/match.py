@@ -24,21 +24,22 @@ def exactMatch(reviewFoodItem, menuItem):
     return possibleMatches
 
 def partialMatch(reviewFoodItem, menuItem):
+    #Counting the number of words in the review food item
     length=len(reviewFoodItem.split(" "))
-
+#Collecting the possible matches
     possibleMatches=[]
     for item in menuItem:
-
+#If atleast half of the review word matches
         if numWordsExactMatches(reviewFoodItem,item) >= math.ceil(float(length) / 2):
-            possibleMatches.append(item)
-    return possibleMatches
+            possibleMatches.append(item) #Add to the list of possible matches
+    return possibleMatches #Returning the list of exact matches
 
 def fuzzyMatch(reviewFoodItem, menuItem):
-    possibleMatches=[]
+    possibleMatches=[]  #Collecting the possible matches
     for item in menuItem:
-        if numWordsMatch(reviewFoodItem,item):
-            possibleMatches.append(item)
-    return '' . join(possibleMatches)
+        if numWordsMatch(reviewFoodItem,item): #Call fucntion numWordsMatch
+            possibleMatches.append(item) #Add to the list of possible matches
+    return '' . join(possibleMatches) #Returning the list of exact matches by joining all characters without any space
 
 
 def numWordsExactMatches(mention, item):
