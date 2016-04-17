@@ -1,5 +1,6 @@
 from solr import connection, query
 from util import constant
+import json
 
 def getMenuItems(res_id):
     """
@@ -15,6 +16,13 @@ def getMenuItems(res_id):
     menuList = restaurant[0]['menu']
     return menuList
 
+def toJson(meuList):
+    """
+    Converting to JSON format
+    :param meuList: the list of menu items
+    :return: the JSON resprestation for the list of menu items
+    """
 
+    return json.dumps(meuList)
 if __name__ == '__main__':
-    print getMenuItems('799')
+    print toJson(getMenuItems('799'))
