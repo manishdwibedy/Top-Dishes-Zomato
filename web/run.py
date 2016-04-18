@@ -77,7 +77,12 @@ def getMenu():
     menuItems = getMenuItems(str(restaurantID))
 
     # Join the individual word to make the food item
-    food_item = ' '.join(food_mentions)
+    food_item = ''
+
+    for food_mention in food_mentions:
+        food_item += food_mention.strip() + ' '
+
+    food_item = food_item.strip()
 
     # Getting the matches by fuzzy matching and partial matching
     matches_fuzzy = fuzzyMatch(food_item, menuItems)
