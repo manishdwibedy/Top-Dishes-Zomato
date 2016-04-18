@@ -31,9 +31,11 @@ def addToSolr(reviews):
 
 def loadFromFile():
     with open('reviewData/reviews_799.txt') as data_file:
-        data = json.load(data_file)
+        reviews = json.load(data_file)
+        for review in reviews:
+            review['annotated'] = False
 
-        addToSolr(data)
+        addToSolr(reviews)
 
 if __name__ == '__main__':
     # New_Delhi = constant.city_id
