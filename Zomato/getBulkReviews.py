@@ -20,6 +20,11 @@ def getAllReviews(city_id, start_city_index, count_city):
         reviewList.append(reviews)
     return reviewList
 
+def getReviewByRestaurant(res_id_list):
+    reviewList = []
+    for res_id in res_id_list:
+        reviewList.append(getReviews.get_reviews(res_id))
+    return reviewList
 
 if __name__ == '__main__':
     New_Delhi = constant.city_id

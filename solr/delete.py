@@ -13,11 +13,22 @@ def delete(connection, collection, query):
     connection[collection].delete({'q':query})
     connection[collection].commit()
 
-if __name__ == '__main__':
-    connection = connection.get_connection()
+def deleteAll():
+    conn = connection.get_connection()
     queryString = 'id:*'
-    delete(connection, constant.RESTAURANTS_COLLECTION,queryString)
+    delete(conn, constant.RESTAURANTS_COLLECTION,queryString)
+    delete(conn, constant.REVIEWS_COLLECTION,queryString)
 
-    output = query.get(connection, constant.RESTAURANTS_COLLECTION, '*:*')
-    print output
+def deleteReviews():
+    conn = connection.get_connection()
+    queryString = 'id:*'
+    delete(conn, constant.RESTAURANTS_COLLECTION,queryString)
+
+def deleteRestaurants():
+    conn = connection.get_connection()
+    queryString = 'id:*'
+    delete(conn, constant.RESTAURANTS_COLLECTION,queryString)
+
+if __name__ == '__main__':
+    deleteAll()
 
