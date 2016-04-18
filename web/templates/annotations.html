@@ -95,7 +95,9 @@
                         contentType: 'application/json',
                         success: function (data) {
                             menuItemList = data.results;
+                            $('#menuItems').empty();
 
+                            $('#menuItems').html(addDefaltMenuOptions());
                             $.each( menuItemList, function( index, menuItem ){
                                 menuItemHTML = '<li><a href="#">';
                                 menuItemHTML += menuItem;
@@ -209,6 +211,13 @@
                 $("#currentMenu").val($(this).text());
 
                 menu_item_selected = $(this).text();
+            }
+
+            function addDefaltMenuOptions()
+            {
+                var HTML =  '<li><a href="#">No Matching Menu</a></li>';
+                HTML += '<li role="separator" class="divider"></li>';
+                return HTML;
             }
         </script>
     </head>
