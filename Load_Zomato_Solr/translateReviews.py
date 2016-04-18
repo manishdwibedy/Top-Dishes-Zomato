@@ -10,8 +10,13 @@ def translateReview(token, original):
     :return: the review in Hindi
     """
     language = constant.lang
-    hindiReview = translate.translate(token, original, language)
-    return hindiReview
+    try:
+        hindiReview = translate.translate(token, original, language)
+        return hindiReview
+    except:
+        print 'Error!'
+        return 'Error in translation. Please edit manually, if needed'
+
 
 def translateReviews(token):
     """
@@ -20,7 +25,7 @@ def translateReviews(token):
     :return: Nothing
     """
     conn = connection.get_connection()
-    data = query.get(conn, constant.REVIEWS_COLLECTION, 'annotated:false')
+    data = query.get(conn, constant.REVIEWS_COLLECTION, 'annotated:false', 60)
 
     reviewsList = data.result.response.docs
 
