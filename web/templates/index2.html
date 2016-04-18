@@ -385,7 +385,7 @@
     $(document).ready(function(){
         $('input.typeahead').typeahead({
             name: 'countries',
-            prefetch: "{{ url_for('static', filename='data/countries.json') }}",
+            prefetch: "{{ url_for('static', filename='data/menu.json') }}",
             limit: 10
         });
     });
