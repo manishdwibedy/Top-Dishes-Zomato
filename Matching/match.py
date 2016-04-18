@@ -1,5 +1,5 @@
-# from fuzzywuzzy import fuzz
-# from Levenshtein import *
+from fuzzywuzzy import fuzz
+from Levenshtein import *
 
 def exactMatch(reviewFoodItem, menuItem):
     """
@@ -32,7 +32,7 @@ def partialMatch(reviewFoodItem, menuItem):
 
         if numWordsExactMatches(reviewFoodItem,item) >= length / 2:
             possibleMatches.append(item)
-    print possibleMatches
+    return possibleMatches
 
 def numWordsExactMatches(mention, item):
     words = mention.split(" ")
@@ -44,7 +44,7 @@ def numWordsExactMatches(mention, item):
                 numMatches =numMatches+1
     return numMatches
 
-# def numWordsMatch(mention, item):
+# def numWordsMatch2(mention, item):
 #     mentionWords = mention.split(" ")
 #     itemWords = item.split(" ")
 #     numMatches = 0
@@ -77,9 +77,15 @@ def numWordsExactMatches(mention, item):
 #     }
 #     return numMatches;
 
-reviewFoodItem="Chicken Tikka Masala"
-menuItem=['Butter Chicken','Chicken Tikka Masala', 'Tikka Chicken Masala', 'Chicken Tika Masala', 'Chicken Tikka Tandori','Paneer Tikka Masala','Mango Lassi','Tandori','Tikka']
-partialMatch(reviewFoodItem,menuItem)
-exactMatch(reviewFoodItem,menuItem)
-# # fuzz.ratio("this is a test", "this is a test!")
-# print Levenshtein.distance("this is a test", "this is a test!")
+def main():
+    possiblematches=[]
+    reviewFoodItem="Chicken Tikka Masala"
+    menuItem=['Butter Chicken','Chicken Tikka Masala', 'Tikka Chicken Masala', 'Chicken Tika Masala', 'Chicken Tikka Tandori','Paneer Tikka Masala','Mango Lassi','Tandori','Tikka']
+    possiblematches.extend(partialMatch(reviewFoodItem,menuItem))
+    possiblematches.extend(exactMatch(reviewFoodItem,menuItem))
+    possiblematches=set(possiblematches)
+    print possiblematches
+    # # fuzz.ratio("this is a test", "this is a test!")
+    print Levenshtein.distance("this is a test", "this is a test!")
+
+main()
