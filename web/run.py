@@ -41,10 +41,10 @@ def saveAnnotation():
             # Computing the food item
             food = ''
             for fooditem in annotation['foodItem']:
-                food += fooditem + ' '
+                food += fooditem.strip() + ' '
 
             # Save the annotations
-            food_list.append(food)
+            food_list.append(food.strip())
             menu_list.append(annotation['menuItem'])
             sentiment_list.append(annotation['sentiment'])
 
