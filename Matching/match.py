@@ -105,4 +105,3 @@ if __name__ == '__main__':
     print fuzzyMatch("chicken tipa", ["Chicken Tikka", "Panner Tikka"])
     print substringMatch("Chicken Tikka Masala", ["Chicken"])
 
-
