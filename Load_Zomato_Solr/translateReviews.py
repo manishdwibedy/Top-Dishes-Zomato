@@ -29,6 +29,13 @@ def translateReviews(token):
         review_original = review['review_text'][0]
         hindiReview = translateReview(token, review_original)
 
+        # Removed the quotes
+        hindiReview = hindiReview[2:-1]
+
+        # If the review has ... at the n
+        if hindiReview.endswith('...'):
+            hindiReview = hindiReview[:-3]
+
         review['hindi'] = hindiReview
         translatedReviewList.append(review)
     index.index(conn, constant.REVIEWS_COLLECTION, translatedReviewList)
