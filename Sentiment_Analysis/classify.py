@@ -1,7 +1,7 @@
 import pickle
 import math
 
-test=[['chocolate'],['strawberry','shake']]
+#test=[['chocolate'],['strawberry','shake']]
 
 test=[['बेहतर'],['एक','एक']]
 
@@ -22,27 +22,30 @@ dict_neu=model_dic['dic_prob']['dict_neu']
 for item in test:
     if dic_prior['pos_prior']!=0:
         sum_pos=math.log(dic_prior['pos_prior'])
+    else:
+        sum_pos=0
         for items in item:
             if items in dict_pos:
                 sum_pos+=math.log(dict_pos[items])
-    else:
-        sum_pos=0
+
 
     if dic_prior['neg_prior']!=0:
         sum_neg=math.log(dic_prior['neg_prior'])
+    else:
+        sum_neg=0
         for items in item:
             if items in dict_neg:
                 sum_neg+=math.log(dict_neg[items])
-    else:
-        sum_neg=0
+
 
     if dic_prior['neu_prior']!=0:
         sum_neu=math.log(dic_prior['neu_prior'])
+    else:
+        sum_neu=0
         for items in item:
             if items in dict_neu:
                 sum_neu+=math.log(dict_neu[items])
-    else:
-        sum_neu=0
+
 
     sum=[sum_pos,sum_neg,sum_neu]
     if max(sum)==sum_pos:
