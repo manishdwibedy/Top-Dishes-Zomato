@@ -10,8 +10,11 @@ def getReviews():
 
     conn = connection.get_connection()
 
-    response = query.get(conn, constant.REVIEWS_COLLECTION, 'annotated:true')
+    num_of_results_response = query.get(conn, constant.REVIEWS_COLLECTION, 'annotated:true', 0)
 
+    num_of_results = num_of_results_response.result.dict['response']['numFound']
+
+    response = query.get(conn, constant.REVIEWS_COLLECTION, 'annotated:true', num_of_results)
     reviews = response.result.dict['response']['docs']
     return reviews
 
@@ -75,4 +78,7 @@ def createBOI():
 if __name__ == '__main__':
     BOI_list = createBOI()
 
-    print BOI_list
+    for index,reviewBOI in enumerate(BOI_list):
+        print 'Review Number ' + str(index+1) + " : "
+        print reviewBOI
+        print '\n'
