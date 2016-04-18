@@ -2,6 +2,7 @@ from util import constant
 from Zomato import getBulkReviews
 from solr import connection, index
 import json
+from Load_Zomato_Solr import translateReviews
 
 def getReviews(city_id, city_index, city_count):
     """
@@ -30,12 +31,14 @@ def addToSolr(reviews):
     index.index(conn, constant.REVIEWS_COLLECTION, reviews)
 
 def loadFromFile():
-    with open('reviewData/reviews_799.txt') as data_file:
+    with open('reviewData/reviews_18161584.txt') as data_file:
         reviews = json.load(data_file)
         for review in reviews:
             review['annotated'] = False
-
         addToSolr(reviews)
+
+    token = translateReviews.translate.getToken()
+    translateReviews.translateReviews(token)
 
 if __name__ == '__main__':
     # New_Delhi = constant.city_id
