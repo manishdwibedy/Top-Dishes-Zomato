@@ -2,7 +2,7 @@ from util import constant
 from Load_Zomato_Solr import loadReviews, translateReviews, loadRestaurant
 from Zomato import getRestaurant
 
-isLoadingReview = False
+isLoadingReview = True
 isLoadingRestaurant = True
 
 def loadReview():
@@ -16,10 +16,22 @@ def loadReview():
 
     loadReviews.addToSolr(reviewList)
 
-
     token = translateReviews.translate.getToken()
     translateReviews.translateReviews(token)
 
+def loadParticularReviewsByRestaurant(res_id_list):
+    restrauntReviews = loadReviews.getRestrauntReviews(res_id_list)
+
+    reviewList = []
+    for restrauntreview in restrauntReviews:
+        for review in restrauntreview:
+            reviewList.append(review)
+
+    loadReviews.addToSolr(reviewList)
+
+    token = translateReviews.translate.getToken()
+    translateReviews.translateReviews(token)
+    pass
 def loadRestraunt():
     resSet = loadRestaurant.getAllRestaurantID()
 
@@ -34,5 +46,5 @@ if __name__ == '__main__':
     elif isLoadingRestaurant and not isLoadingReview:
         loadRestraunt()
     else:
-        loadReview()
+        loadParticularReviewsByRestaurant(['799', '18161584'])
         loadRestraunt()

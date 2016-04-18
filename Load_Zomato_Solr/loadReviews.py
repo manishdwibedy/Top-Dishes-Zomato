@@ -16,6 +16,9 @@ def getReviews(city_id, city_index, city_count):
 
     return reviewList
 
+def getRestrauntReviews(res_id):
+    return getBulkReviews.getReviewByRestaurant(res_id)
+
 def addToSolr(reviews):
     """
     Add the reviews to the solr index
