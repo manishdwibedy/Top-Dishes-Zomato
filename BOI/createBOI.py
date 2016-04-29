@@ -1,4 +1,4 @@
-from solr import connection, query
+from solr import connection, query, index
 from util import constant
 from Get_Zomato_Solr import getUnannotatedReviews
 
@@ -32,7 +32,7 @@ def createFoodDict(food_item_list):
     return food_dict
 
 
-def addBOI():
+def getBOI():
     """
     Creating the BOI annotations
     :return: list of reviews with the BOI tags
@@ -73,10 +73,16 @@ def addBOI():
                     BOI_list.append(word+'/O')
         BOI = ' '.join(BOI_list)
         review['BOI'] = BOI
-        BOI_reviews.append(BOI)
+        BOI_reviews.append(review)
+    return BOI_reviews
 
+def addBOI(BOI):
+    conn = connection.get_connection()
 
+    index.index(conn, constant.REVIEWS_COLLECTION, BOI)
 
 if __name__ == '__main__':
-    addBOI()
+    BOI = getBOI()
+
+    addBOI(BOI)
 
