@@ -1,0 +1,101 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="X-Parsed-By" content="org.apache.tika.parser.DefaultParser"/>
+<meta name="X-Parsed-By" content="org.apache.tika.parser.ocr.TesseractOCRParser"/>
+<meta name="Content-Type" content="image/jpeg"/>
+<title>
+</title>
+</head>
+<body>
+<div>NMN AUR ROYIVAN
+
+042st mu wsw;
+om: mm/ mm
+mm: new
+
+mmm non
+
+loom Ron
+
+mow Puma wank a mm
+mm Ium
+
+mm KI mm saw."
+
+my MASALA Ron
+
+Burma cm (Hun um I Wm
+uwm mm
+
+mm m mum&ldquo; ,&raquo;
+mm: mm
+
+umcm Wm
+
+Puow mum.
+
+ammm wmmw
+
+mm
+
+mam nun
+
+mun NAAN
+
+mm mm
+
+mm m m
+
+(mmmmmmm,
+mummn&mdash;mmlbhm)
+
+Guun's 5n. sum mam
+um Msm (um
+Mn...&ldquo; uï¬x maï¬ayï¬dï¬l
+
+MEEYHAI KA mun
+mm CREAM
+
+Guua me
+
+MUNG on mm
+
+175
+an
+we
+
+Jam :1 wnhclbll .mnmun wan-n
+
+1%
+
+</div>
+</body>
+</html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="Number of Components" content="3"/>
+<meta name="Resolution Units" content="inch"/>
+<meta name="Image Height" content="699 pixels"/>
+<meta name="File Name" content="apache-tika-215427508250439587.tmp"/>
+<meta name="Data Precision" content="8 bits"/>
+<meta name="File Modified Date" content="Fri Apr 29 15:05:43 PDT 2016"/>
+<meta name="tiff:BitsPerSample" content="8"/>
+<meta name="Compression Type" content="Baseline"/>
+<meta name="X-Parsed-By" content="org.apache.tika.parser.DefaultParser"/>
+<meta name="X-Parsed-By" content="org.apache.tika.parser.ocr.TesseractOCRParser"/>
+<meta name="X-Parsed-By" content="org.apache.tika.parser.jpeg.JpegParser"/>
+<meta name="Component 1" content="Y component: Quantization table 0, Sampling factors 2 horiz/2 vert"/>
+<meta name="tiff:ImageLength" content="699"/>
+<meta name="Component 2" content="Cb component: Quantization table 1, Sampling factors 1 horiz/1 vert"/>
+<meta name="Component 3" content="Cr component: Quantization table 1, Sampling factors 1 horiz/1 vert"/>
+<meta name="X Resolution" content="1 dot"/>
+<meta name="File Size" content="37487 bytes"/>
+<meta name="tiff:ImageWidth" content="350"/>
+<meta name="Image Width" content="350 pixels"/>
+<meta name="Content-Type" content="image/jpeg"/>
+<meta name="Y Resolution" content="1 dot"/>
+<title>
+</title>
+</head>
+<body/>
+</html>
