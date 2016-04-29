@@ -3,8 +3,10 @@ import math
 
 #test=[['chocolate'],['strawberry','shake']]
 
-test=[['बेहतर'],['एक','एक']]
-
+test=[['बढ़कर'],['एक','एक']]
+synonyms_list=['बेहतर','उत्तमतर','बढ़कर','बीस','उत्तर','श्रेष्ठतर','सरस']
+# for item in synonyms_list:
+#     print(item)
 
 with open('nbmodel.txt', 'rb') as handle:
   model_dic = pickle.loads(handle.read())
@@ -27,6 +29,12 @@ for item in test:
         for items in item:
             if items in dict_pos:
                 sum_pos+=math.log(dict_pos[items])
+        else:
+            if items in synonyms_list:
+                for i in synonyms_list:
+                    if i in dict_pos:
+                        sum_pos+=math.log(dict_pos[i])
+
 
 
     if dic_prior['neg_prior']!=0:
