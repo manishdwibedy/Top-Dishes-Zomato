@@ -32,7 +32,7 @@ def createFoodDict(food_item_list):
     return food_dict
 
 
-def createBOI():
+def addBOI():
     """
     Creating the BOI annotations
     :return: list of reviews with the BOI tags
@@ -75,12 +75,8 @@ def createBOI():
         review['BOI'] = BOI
         BOI_reviews.append(BOI)
 
-    return BOI_reviews
+
 
 if __name__ == '__main__':
-    BOI_list = createBOI()
+    addBOI()
 
-    for index,reviewBOI in enumerate(BOI_list):
-        print 'Review Number ' + str(index+1) + " : "
-        print reviewBOI
-        print '\n'
