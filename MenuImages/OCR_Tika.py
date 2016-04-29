@@ -39,7 +39,7 @@ def writeMenuText(menuText):
     for filename, menu in menuText.iteritems():
 
         file_location = os.path.join(textDirectory, filename)
-        target = open(file_location, 'wb')
+        target = open(file_location + '.txt', 'wb')
         target.write(menu.encode("UTF-8"))
         target.close()
     pass
@@ -49,3 +49,5 @@ if __name__ == '__main__':
     menuText = getText(menuItems)
 
     writeMenuText(menuText)
+
+    print 'Text extraction done!'
