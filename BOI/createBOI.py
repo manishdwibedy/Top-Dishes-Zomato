@@ -71,7 +71,9 @@ def createBOI():
                         BOI_list.append(word+'/B')
                 else:
                     BOI_list.append(word+'/O')
-        BOI_reviews.append(' '.join(BOI_list))
+        BOI = ' '.join(BOI_list)
+        review['BOI'] = BOI
+        BOI_reviews.append(BOI)
 
     return BOI_reviews
 
