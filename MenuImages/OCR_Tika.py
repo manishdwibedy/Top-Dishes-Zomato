@@ -32,9 +32,20 @@ def getMenuImages():
 
     return menuItems
 
+def writeMenuText(menuText):
+    currentDirectory = os.path.dirname(os.path.realpath(__file__))
+    textDirectory = os.path.join(currentDirectory, 'ocr_text')
+
+    for filename, menu in menuText.iteritems():
+
+        file_location = os.path.join(textDirectory, filename)
+        target = open(file_location, 'wb')
+        target.write(menu.encode("UTF-8"))
+        target.close()
+    pass
 
 if __name__ == '__main__':
     menuItems = getMenuImages()
     menuText = getText(menuItems)
 
-    pass
+    writeMenuText(menuText)
