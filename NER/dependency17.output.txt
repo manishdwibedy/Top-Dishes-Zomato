@@ -1,0 +1,61 @@
+1	शायद	शायद	RB	4	adv
+2	मेरे	मेरे	PRP	3	r6
+3	स्वाद	स्वाद	NN	4	k2
+4	बदल	बदल	VM	7	ccof
+5	गया	गया	VAUX	4	lwg__vaux
+6	है	है	VAUX	4	lwg__vaux
+7	लेकिन	लेकिन	CC:लेकिन	0	ROOT
+8	खाना	खाना	NN	10	k1
+9	अच्छा	अच्छा	JJ	10	k1s
+10	है	है	VM	0	ROOT
+11	कि	कि	CC:कि	0	ROOT
+12	पता	पता	JJ	0	ROOT
+13	नहीं	नहीं	NEG	0	ROOT
+14	.	.	.	13	rsym
+
+1	तंदूरी	तंदूरी	JJ	2	nmod__adj
+2	थाली	थाली	NN	9	ccof
+3	,	,	,	2	rsym
+4	सभी	सभी	QF	5	nmod__adj
+5	tikkas	tikkas	NN	8	k1
+6	भी	भी	RP	5	lwg__rp
+7	मसालेदार	मसालेदार	JJ	8	pof
+8	पाया	पा	VM	9	ccof
+9	और	और	CC:और	0	main
+10	kindo	kindo	NN	16	k1
+11	एक	एक	QC	16	k4
+12	ही	ही	RP	11	lwg__rp
+13	स्वाद	स्वाद	NN	15	r6
+14	का	का	PSP:का	13	lwg__psp
+15	आदेश	आदेश	NN	16	pof
+16	दिया	दे	VM	9	ccof
+17	.	.	.	16	rsym
+
+1	मुख्य	मुख्य	JJ	2	nmod__adj
+2	पाठ्यक्रम	पाठ्यक्रम	NN	4	k1
+3	बेहतर	बेहतर	JJ	4	k1s
+4	था	था	VM	8	vmod
+5	,	,	,	4	rsym
+6	ब्रेड	ब्रेड	NN	7	mod
+7	कुरकुरा	कुरकुरा	NN	8	k1
+8	थे	था	VM	9	ccof
+9	लेकिन	लेकिन	CC:लेकिन	0	main
+10	फिर	फिर	RB	16	adv
+11	से	से	PSP:से	10	mod
+12	सब	सब	QF	13	nmod__adj
+13	कुछ	कुछ	QF	16	k1
+14	भी	भी	RP	13	lwg__rp
+15	मसालेदार	मसालेदार	JJ	16	k1s
+16	था	था	VM	9	ccof
+17	.	.	.	16	rsym
+
+1	मसाले	मसाला	NN	2	ccof
+2	और	और	CC:और	0	main
+3	मिर्च	मिर्च	NN	2	ccof
+4	के	का	PSP:का	3	lwg__psp
+5	बीच	बीच	NST	3	lwg__psp
+6	एक	एक	QC	7	nmod__adj
+7	अंतर	अंतर	NN	2	ccof
+8	है	है	VM	7	rsym
+
+

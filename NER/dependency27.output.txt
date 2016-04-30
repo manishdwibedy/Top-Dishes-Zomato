@@ -1,0 +1,34 @@
+1	माहौल	माहौल	NN	2	ccof
+2	और	और	CC:और	0	ROOT
+3	खाना	खाना	NN	2	ccof
+4	अच्छा	अच्छा	JJ	5	k1s
+5	है	है	VM	0	ROOT
+6	!!	!!	NN	7	ccof
+7	लेकिन	लेकिन	CC:लेकिन	0	ROOT
+8	अगर	अगर	CC:अगर	0	ROOT
+9	अनुभव	अनुभव	NN	11	k1
+10	मायने	मायने	NN	11	pof
+11	रखती	रख	VM	13	ccof
+12	है	है	VAUX	11	lwg__vaux
+13	और	और	CC:और	0	ROOT
+14	क्या	क्या	WQ	16	adv
+15	अच्छा	अच्छा	JJ	16	k1s
+16	है	है	VM	0	ROOT
+17	,	,	,	16	rsym
+18	थोड़ा	थोड़ा	RDP	0	ROOT
+19	उच्च	उच्च	JJ	20	nmod__adj
+20	कीमत	कीमत	NN	0	ROOT
+21	अंक	अंक	JJ	22	nmod__adj
+22	!!	!!	NN	0	ROOT
+23	आप	आप	PRP	0	ROOT
+24	चिकन	चिकन	NN	25	mod
+25	labaabdaar	labaabdaar	NN	26	ccof
+26	और	और	CC:और	0	ROOT
+27	galauti	galauti	NN	31	k1
+28	kabaab	kabaab	JJ	29	nmod__adj
+29	याद	याद	NN	31	pof
+30	नहीं	नहीं	NEG	31	lwg__neg
+31	कर	कर	VM	26	ccof
+32	सकते	सक	VAUX	31	lwg__vaux
+
+

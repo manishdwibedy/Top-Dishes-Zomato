@@ -1,0 +1,135 @@
+1	किसी	किसी	PRP	3	nmod__adj
+2	भी	भी	RP	3	lwg__rp
+3	शब्द	शब्द	NN	12	k1
+4	यहां	यहाँ	PRP	8	k7p
+5	खाद्य	खाद्य	NN	7	r6-k2
+6	का	का	PSP:का	5	lwg__psp
+7	वर्णन	वर्णन	NN	8	pof
+8	करने	कर	VM	12	rt
+9	के	का	PSP:का	8	lwg__psp
+10	लिए	ले	PSP:ले	8	lwg__psp
+11	कम	कम	QF	12	k1s
+12	होगा	हो	VM	0	main
+13	.	.	.	12	rsym
+
+1	मैं	मैं	PRP	0	ROOT
+2	ऐसे	ऐसे	DEM	0	ROOT
+3	एक	एक	QC	5	nmod__adj
+4	अद्भुत	अद्भुत	JJ	5	nmod__adj
+5	उत्तर	उत्तर	NN	0	ROOT
+6	भारतीय	भारतीय	JJ	8	nmod__adj
+7	buffet	buffet	NN	8	mod
+8	दोपहर	दोपहर	NN	10	r6
+9	का	का	PSP:का	8	lwg__psp
+10	खाना	खाना	NN	11	k2
+11	कहीं	कहीं	PRP	0	ROOT
+12	दिल्ली	दिल्ली	NNP	0	ROOT
+13	में	में	PSP:में	12	lwg__psp
+14	और	और	CC:और	0	ROOT
+15	कुछ	कुछ	QF	17	k2
+16	नहीं	नहीं	NEG	17	lwg__neg
+17	खाया	खा	VM	14	ccof
+18	है	है	VAUX	17	lwg__vaux
+19	.	.	.	17	rsym
+
+1	हर	हर	QF	2	nmod__adj
+2	पकवान	पकवान	NN	3	jjmod
+3	स्वादिष्ट	स्वादिष्ट	JJ	4	ccof
+4	बल्कि	बल्कि	CC:बल्कि	0	main
+5	भव्	भव्	NN	22	k1
+6	य	य	RP	5	lwg__rp
+7	शुरुआत	शुरुआत	NN	8	mod
+8	सलाद	सलाद	NN	22	rh
+9	से	से	PSP:से	8	lwg__psp
+10	बिरयानी	बिरयानी	JJ	12	nmod__adj
+11	Kurkure	Kurkure	NN	12	mod
+12	भिंडी	भिंडी	NN	22	rt
+13	के	का	PSP:का	12	lwg__psp
+14	लिए	ले	PSP:ले	12	lwg__psp
+15	चिकन	चिकन	NN	16	mod
+16	मक्खन	मक्खन	NN	19	rt
+17	के	का	PSP:का	16	lwg__psp
+18	लिए	ले	PSP:ले	16	lwg__psp
+19	करने	कर	VM	22	rt
+20	के	का	PSP:का	19	lwg__psp
+21	लिए	ले	PSP:ले	19	lwg__psp
+22	है	है	VM	4	ccof
+23	.	.	.	22	rsym
+
+1	उन्हें	उन्हें	PRP	0	ROOT
+2	कुछ	कुछ	QF	4	k2
+3	नहीं	नहीं	NEG	4	lwg__neg
+4	धड़कता	धड़कता	VM	0	ROOT
+5	.	.	.	4	rsym
+
+1	पीछे	पीछे	RDP	0	ROOT
+2	आदमी	आदमी	NN	0	ROOT
+3	&	&	&	0	ROOT
+4	अपने	अपना	PRP	5	r6
+5	स्वाद	स्वाद	NN	0	ROOT
+6	कलियों	कली	NN	0	ROOT
+7	को	को	PSP:को	6	lwg__psp
+8	सलामी	सलामी	NN	0	ROOT
+9	.	.	.	8	rsym
+
+1	Hehe	Hehe	NN	6	k1
+2	...	...	JJ	3	nmod__adj
+3	लोगों	लोग	NN	5	r6
+4	की	का	PSP:का	3	lwg__psp
+5	कोशिश	कोशिश	NN	6	pof
+6	करनी	कर	VM	0	main
+7	चाहिए	चाह	VAUX	6	lwg__vaux
+8	.	.	.	6	rsym
+
+1	दावत	दावत	NN	0	ROOT
+2	गुलाटी	गुलाटी	NN	4	mod
+3	भानुमती	भानुमती	JJ	4	nmod__adj
+4	सड़क	सड़क	NN	0	ROOT
+5	@	@	@	8	nmod__adj
+6	@	@	@	8	nmod__adj
+7	एक	एक	QC	8	nmod__adj
+8	दिन	दिन	NN	0	ROOT
+9	के	का	PSP:का	8	lwg__psp
+10	लिए	ले	PSP:ले	8	lwg__psp
+11	तेजी	तेजी	RB	0	ROOT
+12	से	से	PSP:से	11	mod
+13	.	.	.	11	rsym
+
+1	दिल्ली	दिल्ली	NNP	0	main
+2	.	.	.	1	rsym
+
+1	यह	यह	DEM	3	k1
+2	एक	एक	QC	3	nmod__adj
+3	चाहिए	चाह	VAUX	0	main
+4	है	है	VAUX	3	lwg__vaux
+5	.	.	.	3	rsym
+
+1	भी	भी	RP	15	adv
+2	वे	वह	PRP	15	k1
+3	नवरात्रि	नवरात्रि	NN	4	k2
+4	बुफे	बुफे	VM	15	k1
+5	8	8	QC	8	nmod__adj
+6	से	से	PSP:से	8	lwg__rp
+7	15	15	QC	8	nmod__adj
+8	Apr	Apr	NN	11	k2
+9	'	'	'	11	rsym
+10	16	16	QC	11	pof
+11	करने	कर	VM	15	rt
+12	के	का	PSP:का	11	lwg__psp
+13	लिए	ले	PSP:ले	11	lwg__psp
+14	शुरू	शुरू	NN	15	pof
+15	है	है	VM	0	main
+16	.	.	.	15	rsym
+
+1	यह	यह	DEM	2	nmod__adj
+2	प्रयास	प्रयास	NN	3	pof
+3	करने	कर	VM	8	rt
+4	के	का	PSP:का	3	lwg__psp
+5	लिए	ले	PSP:ले	3	lwg__psp
+6	इंतजार	इंतजार	NN	8	pof
+7	नहीं	नहीं	NEG	8	lwg__neg
+8	कर	कर	VM	0	main
+9	सकता	सक	VAUX	8	lwg__vaux
+10	.	.	.	8	rsym
+
+

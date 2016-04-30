@@ -1,0 +1,61 @@
+1	अच्छी	अच्छी	JJ	2	nmod__adj
+2	तरह	तरह	NN	0	ROOT
+3	से	से	PSP:से	2	lwg__psp
+4	अद्भुत	अद्भुत	JJ	5	nmod__adj
+5	भोजन	भोजन	NN	0	ROOT
+6	के	का	PSP:का	5	lwg__psp
+7	साथ	साथ	NST	5	lwg__psp
+8	शाम	शाम	NN	0	ROOT
+9	बिताया	बिता	VM	13	mod
+10	...	...	NN	13	mod
+11	:	:	:	13	nmod__adj
+12	)	)	)	13	mod
+13	नवरात्रा	नवरात्रा	NN	0	ROOT
+14	के	का	PSP:का	13	lwg__psp
+15	साथ	साथ	NST	13	lwg__psp
+16	शुद्ध	शुद्ध	JJ	17	nmod__adj
+17	शाकाहारी	शाकाहारी	NN	0	ROOT
+18	(	(	(	21	rsym
+19	कोई	कोई	PRP	20	nmod__adj
+20	प्याज	प्याज	NN	18	ccof
+21	लहसुन	लहसुन	NN	17	nmod
+22	)	)	)	21	rsym
+23	गुलाटी	गुलाटी	NN	17	fragof
+24	पर	पर	PSP:पर	17	fragof
+25	विशेष	विशेष	JJ	0	ROOT
+26	.	.	.	25	rsym
+
+1	अद्भुत	अद्भुत	JJ	2	nmod__adj
+2	सजावट	सजावट	NN	6	ccof
+3	,	,	,	2	rsym
+4	उत्कृष्ट	उत्कृष्ट	JJ	5	nmod__adj
+5	सेवा	सेवा	NN	6	ccof
+6	और	और	CC:और	17	k7
+7	स्वादिष्ट	स्वादिष्ट	JJ	8	nmod__adj
+8	भोजन	भोजन	NN	6	ccof
+9	...	...	NN	17	k1
+10	आप	आप	PRP	17	k1
+11	किसी	किसी	PRP	13	nmod__adj
+12	भी	भी	RP	13	lwg__rp
+13	चीज़	चीज़	NNP	15	r6
+14	की	का	PSP:का	13	lwg__psp
+15	उम्मीद	उम्मीद	NN	17	pof
+16	नहीं	नहीं	NEG	17	lwg__neg
+17	कर	कर	VM	0	main
+18	सकते	सक	VAUX	17	lwg__vaux
+19	हैं	है	VAUX	17	lwg__vaux
+20	.	.	.	17	rsym
+
+1	इस	इस	DEM	6	rt
+2	के	का	PSP:का	1	lwg__psp
+3	लिए	ले	PSP:ले	1	lwg__psp
+4	सभी	सभी	QF	6	k7
+5	में	में	PSP:में	4	lwg__psp
+6	चलते	चल	VM	0	main
+7	हैं	है	VAUX	6	lwg__vaux
+8	.	.	.	6	rsym
+
+1	खुश	खुश	JJ	2	k1s
+2	खाने	खा	VM	0	main
+
+

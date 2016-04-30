@@ -1,0 +1,47 @@
+1	भयानक	भयानक	JJ	3	nmod__adj
+2	bhuna	bhuna	NN	3	mod
+3	मटन	मटन	NN	4	ccof
+4	और	और	CC:और	0	main
+5	दम	दम	NN	6	mod
+6	चिकन	चिकन	NN	4	ccof
+7	.	.	.	6	rsym
+
+1	अच्छा	अच्छा	JJ	2	nmod__adj
+2	माहौल	माहौल	NN	0	main
+3	.	.	.	2	rsym
+
+1	फिरनी	फिर	VM	7	k1
+2	भी	भी	RP	1	lwg__rp
+3	इससे	इससे	PRP	7	rh
+4	बनायी	बना	VM	3	lwg__psp
+5	भी	भी	RP	3	lwg__rp
+6	अच्छा	अच्छा	JJ	7	k1s
+7	था	था	VM	0	main
+8	.	.	.	7	rsym
+
+1	कुल	कुल	QF	7	k1
+2	मिलाकर	मिला	VM	7	vmod
+3	यह	यह	PRP	7	k1
+4	एक	एक	QC	6	nmod__adj
+5	अच्छा	अच्छा	JJ	6	nmod__adj
+6	अनुभव	अनुभव	NN	7	k1s
+7	था	था	VM	0	main
+8	.	.	.	7	rsym
+
+1	सेवा	सेवा	NN	4	k1
+2	भी	भी	RP	1	lwg__rp
+3	अच्छा	अच्छा	JJ	4	k1s
+4	था	था	VM	0	main
+5	.	.	.	4	rsym
+
+1	फिर	फिर	RB	8	adv
+2	से	से	PSP:से	3	lwg__rp
+3	यात्रा	यात्रा	NN	4	pof
+4	करने	कर	VM	8	rt
+5	के	का	PSP:का	4	lwg__psp
+6	लिए	ले	PSP:ले	4	lwg__psp
+7	प्यार	प्यार	NN	8	pof
+8	होता	हो	VM	0	main
+9	.	.	.	8	rsym
+
+

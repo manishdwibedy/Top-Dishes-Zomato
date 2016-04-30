@@ -1,0 +1,88 @@
+1	दिग्गज	दिग्गज	NN	0	main
+2	.	.	.	1	rsym
+
+1	गुरुत्वाकर्षण	गुरुत्वाकर्षण	NN	3	r6
+2	का	का	PSP:का	1	lwg__psp
+3	केंद्र	केंद्र	NN	11	k1
+4	जब	जब	PRP	11	k7t
+5	यह	यह	DEM	6	nmod__adj
+6	खाद्य	खाद्य	NN	7	ccof
+7	और	और	CC:और	11	k1
+8	स्वाद	स्वाद	NN	7	ccof
+9	के	का	PSP:का	8	lwg__psp
+10	लिए	ले	PSP:ले	8	lwg__psp
+11	आता	आ	VM	0	main
+12	है	है	VAUX	11	lwg__vaux
+13	.	.	.	11	rsym
+
+1	इस	इस	DEM	2	nmod__adj
+2	जगह	जगह	NN	5	rh
+3	से	से	PSP:से	2	lwg__psp
+4	प्यार	प्यार	NN	5	k1
+5	है	है	VM	0	main
+6	.	.	.	5	rsym
+
+1	आम	आम	JJ	2	nmod__adj
+2	तौर	तौर	NN	10	k7
+3	पर	पर	PSP:पर	2	lwg__psp
+4	मेरे	मेरे	PRP	10	rt
+5	लिए	ले	PSP:ले	4	lwg__psp
+6	एक	एक	QC	7	nmod__adj
+7	रात	रात	NN	9	r6
+8	के	का	PSP:का	7	lwg__psp
+9	समय	समय	NN	10	k7t
+10	hangout	hangout	VM	0	main
+11	.	.	.	10	rsym
+
+1	गुलाटी	गुलाटी	NN	7	k1
+2	कभी	कभी	PRP	7	k7t
+3	नहीं	नहीं	NEG	7	lwg__neg
+4	यह	यह	PRP	7	k2
+5	दिल्ली-खाद्य	दिल्ली-खाद्य	NN	7	k2
+6	परिभाषित	परिभाषित	JJ	7	pof
+7	किया	कर	VM	13	nmod__k2inv
+8	गया	गया	VAUX	7	lwg__vaux
+9	है	है	VAUX	7	lwg__vaux
+10	वास्तव	वास्तव	NN	13	k7
+11	में	में	PSP:में	10	lwg__psp
+12	निराश	निराश	NN	13	pof
+13	किया	कर	VM	0	main
+14	गया	गया	VAUX	13	lwg__vaux
+15	है	है	VAUX	13	lwg__vaux
+16	.	.	.	13	rsym
+
+1	लोगों	लोग	NN	11	k4
+2	को	को	PSP:को	1	lwg__psp
+3	भारी	भारी	JJ	4	ccof
+4	और	और	CC:और	11	rh
+5	जेब	जेब	NN	4	ccof
+6	वर्षों	वर्ष	NN	11	rt
+7	के	का	PSP:का	6	lwg__psp
+8	लिए	ले	PSP:ले	6	lwg__psp
+9	अब	अब	PRP	11	k7t
+10	हल्का	हल्का	JJ	11	pof
+11	बना	बना	VM	0	main
+12	दिया	दे	VAUX	11	lwg__vaux
+13	है	है	VAUX	11	lwg__vaux
+14	.	.	.	11	rsym
+
+1	यह	यह	PRP	17	k1
+2	मेरी	मेरी	PRP	3	r6
+3	रात	रात	NN	5	r6
+4	की	का	PSP:का	3	lwg__psp
+5	पाली	पाल	NN	17	k7
+6	में	में	PSP:में	5	lwg__psp
+7	एक	एक	QC	17	k7t
+8	पास	पास	NST	7	lwg__psp
+9	अखबार	अखबार	NN	13	ras-k1
+10	के	का	PSP:का	9	lwg__psp
+11	बाद	बाद	NST	9	lwg__psp
+12	अक्सर	अक्सर	RB	13	pof
+13	करने	कर	VM	17	rt
+14	के	का	PSP:का	13	lwg__psp
+15	लिए	ले	PSP:ले	13	lwg__psp
+16	इस्तेमाल	इस्तेमाल	NN	17	pof
+17	किया	कर	VM	0	main
+18	.	.	.	17	rsym
+
+

@@ -1,0 +1,52 @@
+1	वास्तव	वास्तव	NN	4	k7
+2	में	में	PSP:में	1	lwg__psp
+3	प्रचार	प्रचार	NN	4	pof
+4	करने	कर	VM	7	rt
+5	के	का	PSP:का	4	lwg__psp
+6	लिए	ले	PSP:ले	4	lwg__psp
+7	रहते	रह	VM	0	ROOT
+8	उन	उन	DEM	9	nmod__adj
+9	असाधारण	असाधारण	NN	0	ROOT
+10	अच्छे	अच्छे	JJ	11	nmod__adj
+11	स्थानों	स्थान	NN	0	ROOT
+12	में	में	PSP:में	11	lwg__psp
+13	से	से	PSP:से	11	lwg__psp
+14	एक	एक	QC	0	ROOT
+15	.	.	.	14	rsym
+
+1	मेरी	मेरी	PRP	2	r6
+2	राय	राय	NN	0	ROOT
+3	में	में	PSP:में	2	lwg__psp
+4	अद्वितीय	अद्वितीय	JJ	6	nmod__adj
+5	बटर	बटर	NN	6	mod
+6	चिकन	चिकन	NN	0	ROOT
+7	.	.	.	6	rsym
+
+1	कुछ	कुछ	QF	2	nmod__adj
+2	लोग	लोग	NN	4	k1
+3	अधिक	अधिक	QF	4	k1s
+4	है	है	VM	6	ccof
+5	,	,	,	4	rsym
+6	हालांकि	हालांकि	CC:हालांकि	0	main
+7	बेहतर	बेहतर	JJ	8	k1s
+8	है	है	VM	6	ccof
+9	कि	कि	CC:कि	8	k2
+10	जोर	जोर	NN	11	pof
+11	देते	दे	VM	9	ccof
+12	हैं	है	VAUX	11	lwg__vaux
+13	.	.	.	11	rsym
+
+1	शाकाहारियों	शाकाहारियों	NN	3	r6
+2	के	का	PSP:का	1	lwg__psp
+3	रूप	रूप	NN	11	k7
+4	में	में	PSP:में	3	lwg__psp
+5	,	,	,	3	rsym
+6	एक	एक	QC	8	nmod__adj
+7	पूर्ण	पूर्ण	JJ	8	nmod__adj
+8	आनंद	आनंद	NN	11	k1
+9	खाना	खाना	NN	11	k1
+10	यहां	यहाँ	PRP	11	k7p
+11	है	है	VM	0	main
+12	.	.	.	11	rsym
+
+

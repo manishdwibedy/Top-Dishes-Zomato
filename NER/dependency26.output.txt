@@ -1,0 +1,41 @@
+1	एक	एक	QC	2	nmod__adj
+2	ठेठ	ठेठ	NN	4	k2
+3	मुगलई	मुगलई	JJ	4	pof
+4	खाने	खा	VM	0	main
+5	संयुक्त	संयुक्त	XC	4	rsym
+6	.	.	.	4	rsym
+
+1	उनके	उनके	PRP	4	r6
+2	मक्खन	मक्खन	NN	4	mod
+3	चिकन	चिकन	NN	4	mod
+4	वास्तव	वास्तव	NN	7	k7
+5	में	में	PSP:में	4	lwg__psp
+6	अच्छा	अच्छा	JJ	7	k1s
+7	है	है	VM	0	main
+8	.	.	.	7	rsym
+
+1	भाग	भाग	XC	2	mod
+2	बड़ा	बड़ा	XC	0	main
+3	रहे	रह	VAUX	2	lwg__vaux
+4	हैं	है	VAUX	2	lwg__vaux
+5	.	.	.	2	rsym
+
+1	उनके	उनके	PRP	2	r6
+2	कबाब	कबाब	NN	3	ccof
+3	और	और	CC:और	8	k2
+4	tikkas	tikkas	JJ	5	nmod__adj
+5	अगली	अगली	NN	3	ccof
+6	बार	बार	RP	5	lwg__rp
+7	सुनिश्चित	सुनिश्चित	JJ	8	pof
+8	करने	कर	VM	12	rt
+9	के	का	PSP:का	8	lwg__psp
+10	लिए	ले	PSP:ले	8	lwg__psp
+11	कोशिश	कोशिश	NN	12	pof
+12	करना	कर	VM	13	k2
+13	चाहते	चाह	VAUX	0	main
+14	हैं	है	VAUX	13	lwg__vaux
+15	.	.	.	13	rsym
+
+1	!!	!!	NN	0	main
+
+

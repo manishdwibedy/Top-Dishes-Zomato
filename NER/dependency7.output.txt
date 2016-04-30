@@ -1,0 +1,81 @@
+1	हम	हम	PRP	15	k1
+2	इस	इस	DEM	3	nmod__adj
+3	जगह	जगह	NN	15	k7
+4	पर	पर	PSP:पर	3	lwg__psp
+5	6	6	QC	8	mod
+6	-	-	-	8	rsym
+7	7	7	QC	8	nmod__adj
+8	दोस्तों	दोस्त	NN	15	ras-k1
+9	के	का	PSP:का	8	lwg__psp
+10	साथ	साथ	NST	8	lwg__psp
+11	एक	एक	QC	12	nmod__adj
+12	जन्मदिन	जन्मदिन	NN	15	rt
+13	के	का	PSP:का	12	lwg__psp
+14	लिए	ले	PSP:ले	12	lwg__psp
+15	चला	चला	VM	0	main
+16	गया	गया	VAUX	15	lwg__vaux
+17	.	.	.	15	rsym
+
+1	हम	हम	PRP	9	k1
+2	उनके	उनके	PRP	4	r6
+3	buffet	buffet	JJ	4	nmod__adj
+4	दोपहर	दोपहर	NN	6	r6
+5	के	का	PSP:का	4	lwg__psp
+6	भोजन	भोजन	NN	8	r6-k2
+7	का	का	PSP:का	6	lwg__psp
+8	फैसला	फैसला	NN	9	pof
+9	किया	कर	VM	0	main
+10	.	.	.	9	rsym
+
+1	और	और	CC:और	0	ROOT
+2	मुझे	मुझे	PRP	0	ROOT
+3	,	,	,	2	rsym
+4	अपनी	अपनी	PRP	6	r6
+5	बेहतर	बेहतर	JJ	6	nmod__adj
+6	खाना	खाना	NN	8	nmod
+7	अलग-अलग	अलग-अलग	JJ	8	nmod__adj
+8	आदेश	आदेश	NN	0	ROOT
+9	कि	कि	CC:कि	0	ROOT
+10	सचमुच	सचमुच	RB	0	ROOT
+11	आप	आप	PRP	0	ROOT
+12	पैसे	पैसा	NN	13	k2
+13	लूटता	लूट	VM	0	ROOT
+14	विश्वास	विश्वास	NN	13	ccof
+15	.	.	.	14	rsym
+
+1	बुफे	बुफे	NN	3	r6
+2	के	का	PSP:का	1	lwg__psp
+3	रूप	रूप	NN	21	k7
+4	में	में	PSP:में	3	lwg__psp
+5	अच्छी	अच्छी	JJ	6	nmod__adj
+6	तरह	तरह	NN	21	adv
+7	से	से	PSP:से	6	lwg__psp
+8	गैर	गैर	JJ	10	mod
+9	शाकाहारी	शाकाहारी	NN	10	mod
+10	भोजन	भोजन	NN	21	k1
+11	,	,	,	10	rsym
+12	वेज	वेज	XC	14	k1
+13	बिरयानी	बिरयानी	NN	14	pof
+14	होने	हो	VM	21	rh
+15	के	का	PSP:का	14	lwg__psp
+16	नाते	नाते	VM	14	lwg__psp
+17	मेरी	मेरी	PRP	18	r6
+18	fav	fav	NN	21	k1
+19	शाकाहारी	शाकाहारी	JJ	20	nmod__adj
+20	किस्म	किस्म	NN	21	k1s
+21	था	था	VM	0	main
+22	.	.	.	21	rsym
+
+1	Chocochip	Chocochip	XC	3	mod
+2	आइस	आइस	XC	3	mod
+3	क्रीम	क्रीम	NN	4	k1
+4	yummyyyy	yummyyyy	VM	0	main
+5	थी	था	VAUX	4	lwg__vaux
+6	.	.	.	4	rsym
+
+1	सर्वर	सर्वर	NN	4	k1
+2	बहुत	बहुत	QF	3	nmod__adj
+3	प्यारी	प्यारी	NN	4	k1s
+4	हैं	है	VM	0	main
+
+
