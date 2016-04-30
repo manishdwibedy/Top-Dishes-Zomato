@@ -1,0 +1,138 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="X-Parsed-By" content="org.apache.tika.parser.DefaultParser"/>
+<meta name="X-Parsed-By" content="org.apache.tika.parser.ocr.TesseractOCRParser"/>
+<meta name="Content-Type" content="image/jpeg"/>
+<title>
+</title>
+</head>
+<body>
+<div>W&lsquo;MKAW.&rsquo; V
+
+mmmm
+
+mm mm mm
+
+mm mum mm 1&lsquo;
+
+mmwmmm J an
+an
+
+mm (mm ms...
+
+mm nmmu m
+
+WWW in
+
+mm mm mum: ) m
+
+AulAnwwxENAwaNANmsE "v p&lsquo;V &lsquo;Wwamg
+&raquo; mmmxx
+mmmm, 3w &lsquo;
+Immune
+WWW?&ldquo; J :3; mama/Must&ldquo; J
+Wmmwmw J 5,, mummnuw)
+wruwmn m , WWWWLWJ
+mmnmmnsuum in Q
+MINA nu! ) m t m 5&ldquo;&ldquo; J
+Mfg. g: ; nw&lsquo;ï¬&lsquo;mmu
+W J , mm; ,
+m": g; ; mmmmmuml
+I 9; salmon-mu) )
+xmmmn as u v ,mmm
+mum. 9 as f Naming.&raquo;
+mmmw mm x '. &lsquo; 1&ldquo;wa
+mwmu J
+&ldquo;WWW J 410
+WWW 410 _WWW j
+&ldquo;(&rdquo;1me an 5 {:3 &ldquo;&ldquo;
+nmsxwmumm &laquo;a ' , mm&rdquo;
+mum &cent; a.&raquo; ; mm xummm
+mzxmmu on "
+WW. fun 1 .3521!&ldquo; ,
+mumw #u &lsquo; &lsquo; .m- m
+mzxuusuu m . mum-f&ldquo; &rsquo;
+mmix ) m , mm
+&lsquo;mixmmx m r mun
+mm. 3.. ;". &laquo;'W!&ldquo;
+www.mmm, i4 &laquo;ï¬x-mmmmlw
+
+an
+
+ 
+
+sun-1m a: mm: mm s:
+
+Wmmnmw. J
+wuumnwl
+mum-tuner"
+mummmm )
+
+, mmum J
+mmmwnm .)
+mmm
+
+  
+
+ 
+
+ 
+
+  
+
+Jun,
+
+Ki
+
+ 
+
+:0
+4w
+
+5%
+
+EE&pound;3&sect;E23555EE
+
+E&sect;
+
+E&sect;g&sect;
+
+{&pound;22
+
+In
+
+&sect;&sect;&sect;E
+
+n5
+
+</div>
+</body>
+</html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="Number of Components" content="3"/>
+<meta name="Resolution Units" content="inch"/>
+<meta name="Image Height" content="549 pixels"/>
+<meta name="File Name" content="apache-tika-8238009112503924808.tmp"/>
+<meta name="Data Precision" content="8 bits"/>
+<meta name="File Modified Date" content="Fri Apr 29 15:06:50 PDT 2016"/>
+<meta name="tiff:BitsPerSample" content="8"/>
+<meta name="Compression Type" content="Baseline"/>
+<meta name="X-Parsed-By" content="org.apache.tika.parser.DefaultParser"/>
+<meta name="X-Parsed-By" content="org.apache.tika.parser.ocr.TesseractOCRParser"/>
+<meta name="X-Parsed-By" content="org.apache.tika.parser.jpeg.JpegParser"/>
+<meta name="Component 1" content="Y component: Quantization table 0, Sampling factors 2 horiz/2 vert"/>
+<meta name="tiff:ImageLength" content="549"/>
+<meta name="Component 2" content="Cb component: Quantization table 1, Sampling factors 1 horiz/1 vert"/>
+<meta name="Component 3" content="Cr component: Quantization table 1, Sampling factors 1 horiz/1 vert"/>
+<meta name="X Resolution" content="1 dot"/>
+<meta name="File Size" content="79841 bytes"/>
+<meta name="tiff:ImageWidth" content="550"/>
+<meta name="Image Width" content="550 pixels"/>
+<meta name="Content-Type" content="image/jpeg"/>
+<meta name="Y Resolution" content="1 dot"/>
+<title>
+</title>
+</head>
+<body/>
+</html>

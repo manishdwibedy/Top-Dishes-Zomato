@@ -1,0 +1,127 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="X-Parsed-By" content="org.apache.tika.parser.DefaultParser"/>
+<meta name="X-Parsed-By" content="org.apache.tika.parser.ocr.TesseractOCRParser"/>
+<meta name="Content-Type" content="image/jpeg"/>
+<title>
+</title>
+</head>
+<body>
+<div>     
+   
+
+ 
+
+m
+&ldquo;mom-mam) m
+mam mm mm 1-
+ammunwï¬vuv m
+&ldquo;moan um&raquo;. man m
+u.&lsquo; a-&rdquo; m.&raquo; may it!
+u... an". xm. may in
+Mm nut pa) us
+shun-wan m... &lsquo;5.
+
+mun: "my :&mdash;
+m... mm... m nu 0va) us
+mum um mu m
+Gmwu m&raquo; um, 'uwu W lawn-1M&raquo;. m
+nun-mm 7...... m. n n) m
+"mum-&laquo;um; m
+
+NElN-VEE. STARTERS
+
+mu... &ldquo;mu [Apt-I
+cum-n K&mdash;nm v mm &laquo;Dc-t
+cnkun mm x. .&raquo; mm
+cm... m. m.- {inc-7
+cm... M Mr&ldquo;!
+
+cm..." &rdquo;mun-n m m (ax-I
+cm... Mn m.&raquo; 1M7
+cnkun own m. (o w)
+&ldquo;ammonia-&laquo;(41:12)
+
+cm." mu x." mm mu
+anur. mum. nklu mm)
+cum-n K&mdash;mn m- FM}
+mm em nu. mm
+cum-n mm m.&raquo; mm)
+mm nun: u..- &laquo;my
+m..." mu M. um...
+mm. s...&raquo; a...&raquo; VIN!
+mm sm- mu (Ian)
+
+M. m. w&raquo; 5...&ldquo;...
+
+m. m u mum
+humm- m-w a&raquo;... whnmw&lsquo; mm.
+s.&ldquo; &laquo;mm. mm &rsquo;Ilml with mm: mm.
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+W... m
+"mm&rdquo;.&laquo;ka... 2..
+mmwum. 5..
+ammmwmmw n.
+EIRVAMI Servzdwnhï¬ra Eï¬urranl alla m
+mungm&lsquo;ym m
+&ldquo;mm. 2..
+mum m
+mummy.&rdquo; 1&raquo;:
+&rdquo;mm. .
+m_ limit &laquo;my
+m... .. m
+mm .. &lt;19
+mus (uzw mu EVERVnAV)
+
+mmmu
+
+was..." m.h,..m~..n...&lsquo;...&lsquo;.. &lt;0
+
+ 
+
+Nan-m mmn mmm w mm m", m, rmu m
+
+</div>
+</body>
+</html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="Number of Components" content="3"/>
+<meta name="Resolution Units" content="inch"/>
+<meta name="Image Height" content="700 pixels"/>
+<meta name="File Name" content="apache-tika-8533554510596892537.tmp"/>
+<meta name="Data Precision" content="8 bits"/>
+<meta name="File Modified Date" content="Fri Apr 29 15:06:10 PDT 2016"/>
+<meta name="tiff:BitsPerSample" content="8"/>
+<meta name="Compression Type" content="Baseline"/>
+<meta name="X-Parsed-By" content="org.apache.tika.parser.DefaultParser"/>
+<meta name="X-Parsed-By" content="org.apache.tika.parser.ocr.TesseractOCRParser"/>
+<meta name="X-Parsed-By" content="org.apache.tika.parser.jpeg.JpegParser"/>
+<meta name="Component 1" content="Y component: Quantization table 0, Sampling factors 2 horiz/2 vert"/>
+<meta name="tiff:ImageLength" content="700"/>
+<meta name="Component 2" content="Cb component: Quantization table 1, Sampling factors 1 horiz/1 vert"/>
+<meta name="Component 3" content="Cr component: Quantization table 1, Sampling factors 1 horiz/1 vert"/>
+<meta name="X Resolution" content="1 dot"/>
+<meta name="File Size" content="96940 bytes"/>
+<meta name="tiff:ImageWidth" content="500"/>
+<meta name="Image Width" content="500 pixels"/>
+<meta name="Content-Type" content="image/jpeg"/>
+<meta name="XMP Value Count" content="6"/>
+<meta name="Y Resolution" content="1 dot"/>
+<title>
+</title>
+</head>
+<body/>
+</html>

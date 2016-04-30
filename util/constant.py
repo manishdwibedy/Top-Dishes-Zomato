@@ -55,3 +55,9 @@ OCR_MENU_URL = 'https://b.zmtcdn.com/data/menus/318/16774318/64dbf28b1c7ea97d90b
 
 REVIEWS_COLLECTION = 'zomato_reviews'
 RESTAURANTS_COLLECTION = 'zomato_restaurants'
+
+#######
+## TIKA
+#######
+
+TIKA_CONTENT_URL = 'http://localhost:9998/tika'

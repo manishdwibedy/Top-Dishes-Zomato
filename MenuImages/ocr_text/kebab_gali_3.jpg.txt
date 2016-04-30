@@ -1,0 +1,252 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="X-Parsed-By" content="org.apache.tika.parser.DefaultParser"/>
+<meta name="X-Parsed-By" content="org.apache.tika.parser.ocr.TesseractOCRParser"/>
+<meta name="Content-Type" content="image/jpeg"/>
+<title>
+</title>
+</head>
+<body>
+<div>KEBAB EALI SFL mu
+
+m In: hnuvhkkx I&gt;&lt; &rdquo;mum. mam .u ml,
+
+2 MI a&ldquo;. m. 5....&ldquo; mm .. omn-
+
+u....v.. anm m. mm, anm on... rm.
+
+2 mu. um, um, um emu-y I am."
+
+I_&mdash;
+
+Flu&mdash;rï¬hki m
+um mu m
+
+mm mu m
+2mm 3&ldquo;&raquo;. w.
+Mun m... m
+
+CURWES VEG
+
+a.&lsquo; Mum-m
+m. m. curvy
+
+&laquo;u Vvsmw
+
+m. . u-Hv m m nan
+m. Curvy! mm m.
+n.1,... n...
+
+xmn-I an...
+mm mm
+mm... m...
+p. in: mm
+Dunn-7Y1&rdquo;:- um...
+"mm mm &laquo;mm
+m. Km mu...
+mum". u...
+
+ELIRRIES NEIN VEG
+
+am. cm...
+mm cw.&ldquo;
+cm." m. m...
+cm n my
+cum H am
+am... Kam-
+ummn cm...
+cm." u m
+cm." mum
+m Mum mm
+
+mm mm.
+
+mm." mm
+
+mun- &raquo;... curry
+
+a...&lsquo; ma." (om-r cunyl
+cm." Km curry
+
+Human M.&ldquo; 4m.
+
+m. cm
+
+1.- u...
+
+m. Gum
+
+a... mug...&ldquo;
+
+Kaun- um,
+
+sun m...
+
+mum n... curvy mm..."
+
+ 
+
+ 
+
+ 
+
+ 
+
+my (Hwy. &lsquo; n
+us
+115
+a;
+14;
+us
+as
+s
+155
+a;
+155
+as
+as
+m
+
+a" (2.")
+195
+m
+m
+as
+us
+ms
+m
+m
+us
+215
+225
+215
+m
+n5
+2sz
+154
+as
+2::
+105
+m
+as
+as
+
+ 
+
+mu m... )4?
+250
+250
+15a
+21:
+m
+as
+m
+m
+215
+m
+m
+m
+m
+m
+
+um mu&raquo;
+
+m
+2.:
+m
+m
+m
+2.;
+us
+2.;
+m
+m
+m
+:50
+3542
+2,5
+m
+w;
+m
+354:
+:50
+m
+an:
+3542
+w
+
+m
+m
+an
+m
+m
+
+s... M...&raquo;
+m
+an
+m
+m
+m
+m
+m
+as
+as
+m
+as
+us
+as
+us
+
+Full ma&raquo;
+
+2&amp;555
+
+EHEEEEE
+
+IME_&mdash;
+
+w. m... mm
+mm. m. mm ~ mm .. mu. (My -
+v.9 cm&raquo; um . w mm". . &gt;4.&ldquo;
+
+mm m. m.
+
+(chumnxmwpcnmmmmxm.
+
+Nun M a m (M) . on my...&ldquo; . &gt;4.&ldquo;
+
+&sect;
+
+2
+
+</div>
+</body>
+</html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="Number of Components" content="3"/>
+<meta name="Resolution Units" content="inch"/>
+<meta name="Image Height" content="700 pixels"/>
+<meta name="File Name" content="apache-tika-56940184019536622.tmp"/>
+<meta name="Data Precision" content="8 bits"/>
+<meta name="File Modified Date" content="Fri Apr 29 15:06:31 PDT 2016"/>
+<meta name="tiff:BitsPerSample" content="8"/>
+<meta name="Compression Type" content="Baseline"/>
+<meta name="X-Parsed-By" content="org.apache.tika.parser.DefaultParser"/>
+<meta name="X-Parsed-By" content="org.apache.tika.parser.ocr.TesseractOCRParser"/>
+<meta name="X-Parsed-By" content="org.apache.tika.parser.jpeg.JpegParser"/>
+<meta name="Component 1" content="Y component: Quantization table 0, Sampling factors 2 horiz/2 vert"/>
+<meta name="tiff:ImageLength" content="700"/>
+<meta name="Component 2" content="Cb component: Quantization table 1, Sampling factors 1 horiz/1 vert"/>
+<meta name="Component 3" content="Cr component: Quantization table 1, Sampling factors 1 horiz/1 vert"/>
+<meta name="X Resolution" content="72 dots"/>
+<meta name="File Size" content="74139 bytes"/>
+<meta name="tiff:ImageWidth" content="500"/>
+<meta name="Image Width" content="500 pixels"/>
+<meta name="Content-Type" content="image/jpeg"/>
+<meta name="Y Resolution" content="72 dots"/>
+<title>
+</title>
+</head>
+<body/>
+</html>
