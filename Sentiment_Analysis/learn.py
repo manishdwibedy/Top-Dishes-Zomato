@@ -18,8 +18,8 @@ for line in f_pos:
         if item not in unique_words:
             unique_words.append(item)
 
-print(count_pos)
-print(dict_pos)
+# print(count_pos)
+# print(dict_pos)
 
 
 count_neg=0
@@ -49,9 +49,7 @@ for line in f_neu:
         if item not in unique_words:
             unique_words.append(item)
 
-# print(count_neu)
-# print(dict_neu)
-# print(unique_words)
+
 count=count_pos+count_neg+count_neu
 pos_prior=count_pos/count
 neg_prior=count_neg/count
@@ -61,9 +59,6 @@ neu_prior=count_neu/count
 dic_prior={'pos_prior':pos_prior,'neg_prior':neg_prior,'neu_prior':neu_prior}
 print(dic_prior)
 
-# print(pos_prior)
-# print(neg_prior)
-# print(neu_prior)
 
 
 for item in unique_words:

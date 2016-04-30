@@ -30,10 +30,20 @@ for label in labels:
         else:
             count_fn+=1
 
-    precision=(count_tp)/(count_tp+count_fp)
-    recall=(count_tp)/(count_tp+count_fn)
 
-    f1+=(2*precision*recall)/(precision+recall)
+    if not(count_tp==0 and count_fp==0):
+        precision=(count_tp)/(count_tp+count_fp)
+    else:
+        precision=0
+    if not(count_tp==0 and count_fn==0):
+        recall=(count_tp)/(count_tp+count_fn)
+    else:
+        recall=0
+
+    if not(precision==0 and recall==0):
+        f1+=(2*precision*recall)/(precision+recall)
+    else:
+        f1+=0
 
 f1=f1/3
 print(f1)

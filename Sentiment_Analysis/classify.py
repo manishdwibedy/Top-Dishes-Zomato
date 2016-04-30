@@ -1,9 +1,16 @@
 import pickle
 import math
+import csv
+
+test=[]
+with open('NB_actual_snippets.txt',encoding='utf8') as f:
+    reader = csv.reader(f,delimiter='\t')
+    for line in reader:
+        test.append([line[0]])
+print(test)
 
 
 
-test=[['बढ़कर'],['एक','बीस']]
 synonyms_list=['बेहतर','उत्तमतर','बढ़कर','बीस','उत्तर','श्रेष्ठतर','सरस']
 
 with open('nbmodel.txt', 'rb') as handle:
