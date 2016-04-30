@@ -43,7 +43,8 @@ for label in labels:
     if not(precision==0 and recall==0):
         f1+=(2*precision*recall)/(precision+recall)
     else:
-        f1+=0.5 # random f1 added to make the results unbaised
+        f1+=0.5
+
 
 f1=f1/3
 print(f1)
