@@ -1,12 +1,10 @@
 import pickle
 import math
 
-#test=[['chocolate'],['strawberry','shake']]
 
-test=[['बढ़कर'],['एक','एक']]
+
+test=[['बढ़कर'],['एक','बीस']]
 synonyms_list=['बेहतर','उत्तमतर','बढ़कर','बीस','उत्तर','श्रेष्ठतर','सरस']
-# for item in synonyms_list:
-#     print(item)
 
 with open('nbmodel.txt', 'rb') as handle:
   model_dic = pickle.loads(handle.read())
@@ -16,10 +14,7 @@ dict_pos=model_dic['dic_prob']['dict_pos']
 dict_neg=model_dic['dic_prob']['dict_neg']
 dict_neu=model_dic['dic_prob']['dict_neu']
 
-# print(dic_prior)
-# print(dict_pos)
-# print(dict_neg)
-# print(dict_pos)
+a=[]
 
 for item in test:
     if dic_prior['pos_prior']!=0:
@@ -57,8 +52,26 @@ for item in test:
 
     sum=[sum_pos,sum_neg,sum_neu]
     if max(sum)==sum_pos:
-        print(item,' Positive')
+        b=[]
+        for i in item:
+            b.append(i)
+        b.append('Nice')
+        a.append(b)
+        #print(item,' Positive')
     elif max(sum)==sum_neg:
-        print(item,' Negative')
+        b=[]
+        for i in item:
+            b.append(i)
+        b.append('Bad')
+        a.append(b)
+        #print(item,' Negative')
     else:
-        print(item,' Neutral')
+        b=[]
+        for i in item:
+            b.append(i)
+        b.append('So-so')
+        a.append(b)
+        #print(item,' Neutral')
+print(a)
+with open('nbmodel_eval.txt', 'wb') as handle:
+  pickle.dump(a, handle)
